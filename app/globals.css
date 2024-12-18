@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
+/* a {
   @apply text-gray-800 dark:text-gray-300;
   transition: color 1s ease-in-out;
   cursor: pointer;
-}
+} */
 
 body {
   height: 100vh;

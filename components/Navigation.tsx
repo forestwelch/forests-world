@@ -1,16 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 // import LanguageToggle from "./LanguageToggle";
-// import ThemeToggle from "./ThemeToggle";
 // import { Logo } from "..";
 
-const Navigation = ({
-  theme,
-  toggleTheme,
-}: {
-  theme: string;
-  toggleTheme: () => void;
-}) => {
+const Navigation = () => {
   return (
     <div className="w-full text-gray-400 bg-black bg-opacity-20 sm:w-full">
       <div className="px-8 py-2 flex items-center justify-between">
@@ -21,8 +17,8 @@ const Navigation = ({
           height={40}
         />
         <div className="flex items-center">
-          {/* <LanguageToggle />
-          <ThemeToggle theme={theme} toggleTheme={toggleTheme} /> */}
+          {/* <LanguageToggle /> */}
+          <ThemeToggle />
         </div>
       </div>
     </div>

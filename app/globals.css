@@ -2,14 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+a {
   @apply text-gray-800 dark:text-gray-300;
+  transition: color 1s ease-in-out;
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
   font-size: 1.25rem;
   transition: color 1s ease-in-out;
+  color: #333;
+
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.3),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
+    white;
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  transition: background 1s ease-in-out;
+}
+
+/* Dark mode background gradient */
+.dark body {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.3),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
+    black;
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  transition: background 1s ease-in-out;
+
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
   body {
+    background-size: 200% 200%;
     font-size: 1rem;
   }
 }
@@ -20,13 +57,6 @@ body {
   }
 }
 
-a {
-  @apply text-gray-800 dark:text-gray-300;
-  transition: color 1s ease-in-out;
-  cursor: pointer;
-}
-
-/* globals.css */
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -42,40 +72,5 @@ a {
   }
   100% {
     background-position: 0% 0%;
-  }
-}
-
-.bg-gradient-dark {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.3),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
-    black;
-  background-size: 300% 300%;
-  animation: gradient 20s ease infinite;
-  transition: background 1s ease-in-out;
-}
-
-.bg-gradient-light {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.3),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
-    white;
-  background-size: 300% 300%;
-  animation: gradient 20s ease infinite;
-  transition: background 1s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .bg-gradient-dark,
-  .bg-gradient-light {
-    background-size: 200% 200%;
   }
 }

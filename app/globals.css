@@ -45,7 +45,6 @@ a {
   }
 }
 
-/* Dark mode background */
 .bg-gradient-dark {
   background: linear-gradient(
       217deg,
@@ -60,7 +59,6 @@ a {
   transition: background 1s ease-in-out;
 }
 
-/* Light mode background */
 .bg-gradient-light {
   background: linear-gradient(
       217deg,
@@ -75,7 +73,6 @@ a {
   transition: background 1s ease-in-out;
 }
 
-/* Responsive: reduce background size for small screens */
 @media (max-width: 768px) {
   .bg-gradient-dark,
   .bg-gradient-light {

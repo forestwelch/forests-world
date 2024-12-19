@@ -3,8 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
-// import LanguageToggle from "./LanguageToggle";
-// import { Logo } from "..";
+import LanguageToggle from "./LanguageToggle";
 
 const Navigation = () => {
   return (
@@ -17,7 +16,7 @@ const Navigation = () => {
           height={40}
         />
         <div className="flex items-center">
-          {/* <LanguageToggle /> */}
+          <LanguageToggle />
           <ThemeToggle />
         </div>
       </div>

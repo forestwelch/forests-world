@@ -1,6 +1,24 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useLayoutEffect,
+} from "react";
+
+/**
+ * Function to reset body styles after the theme change.
+ *
+ * On page load, the browser may apply `overflow: hidden` and `padding-right: 15px`
+ * due to theme toggling. This behavior can cause layout shifts.
+ * We explicitly reset these styles to ensure the page layout remains stable
+ * and prevents unexpected scrolling or layout issues.
+ */
+const disableBodyLock = () => {
+  // document.body.style.overflowY = "auto";
+  document.body.style.paddingRight = "0px";
+};
 
 const ThemeContext = createContext<
   { theme: string; toggleTheme: () => void } | undefined
@@ -9,7 +27,7 @@ const ThemeContext = createContext<
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<string | null>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       document.documentElement.classList.add("dark");
@@ -18,6 +36,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       document.documentElement.classList.remove("dark");
       setTheme("light");
     }
+
+    // Force reset after theme is applied
+    setTimeout(disableBodyLock, 100);
   }, []);
 
   const toggleTheme = () => {
@@ -27,6 +48,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     document.documentElement.classList.toggle("dark");
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
+
+    // Reset styles after theme toggle
+    setTimeout(disableBodyLock, 100);
   };
 
   if (theme === null) {

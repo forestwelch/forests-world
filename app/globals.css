@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  height: 100vh;
+  font-family: var(--font-dm-sans), sans-serif;
   transition: color 1s ease-in-out;
   color: #333;
 
@@ -85,4 +85,17 @@ a {
 
 .dark a {
   color: #ccc;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in forwards;
 }

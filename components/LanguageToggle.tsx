@@ -30,13 +30,15 @@ const LanguageToggle = () => {
   };
 
   return (
-    <a
-      className="language-toggle inline-block p-1.5 m-2 text-md font-light relative transition-opacity duration-300"
-      style={{ opacity: visible ? 1 : 0 }}
-      onClick={changeLanguage}
-    >
-      {i18n.language.toUpperCase()}
-    </a>
+    <div className="w-6 text-center">
+      <a
+        className="language-toggle inline-block p-1.5 m-2 text-md font-light relative transition-opacity duration-300"
+        style={{ opacity: visible ? 1 : 0 }}
+        onClick={changeLanguage}
+      >
+        {i18n.language.toUpperCase()}
+      </a>
+    </div>
   );
 };
 

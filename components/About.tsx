@@ -7,15 +7,15 @@ const About = () => {
 
   return (
     <section className="p-20 flex flex-col gap-8">
-      <h1 className="text-6xl font-thin text-center md:hidden">
+      <h1 className="text-8xl font-thin text-center lg:hidden">
         {t("WelcomeShort")}
       </h1>
-      <h1 className="text-6xl lg:text-8xl font-thin text-center hidden md:block">
+      <h1 className="text-8xl font-thin text-center hidden lg:block">
         {t("WelcomeFull")}
       </h1>
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8">
         <section className="max-w-xl">
-          <p className="text-justify">{t("Blurb")}</p>
+          <p className="text-justify text-xl">{t("Blurb")}</p>
         </section>
         <div className="">
           <Image

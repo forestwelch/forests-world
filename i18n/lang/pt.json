@@ -1,0 +1,16 @@
+{
+  "About": "Sobre",
+  "Past Work": "Trabalhos Anteriores",
+  "Projects": "Projetos",
+  "Contact": "Contato",
+  "WelcomeFull": "Bem-vindo ao meu mundo.",
+  "WelcomeShort": "Bem-vindo.",
+  "Resume": "Currículo",
+  "Blurb": "Desde jovem, minha fascinação por linguagem—falada, sinalizada e codificada—sempre foi inabalável: a linguagem é a nossa ponte mais poderosa para o entendimento e a conexão. Como desenvolvedor, canalizo essa paixão para criar ferramentas que amplifiquem o potencial dos usuários.",
+  "Bop": "Bop é um aplicativo de streaming musical de uma página que permite aos usuários criar e embaralhar playlists, além de seguir os artistas favoritos dos amigos. Construído com Rails, React e Redux.",
+  "ThePowerOfFriendship": "The Power of Friendship é um jogo minimalista de plataforma e quebra-cabeça onde uma equipe heterogênea de blocos deve trabalhar junto para ter sucesso. Feito em JavaScript nativo, HTML e CSS.",
+  "ProjectPhantom": "Project Phantom é uma biblioteca de componentes React VR, compilação npx e processador de arquivos. Nossa equipe se aventurou no crescente mundo da realidade virtual para facilitar para você seguir também.",
+  "Synergia": "Synergía é uma organização internacional de direitos humanos LGBT dedicada ao fortalecimento de movimentos sociais locais. Construído em um hackathon de meio dia no GitHub.",
+  "Verbling": "Um aplicativo simples para fazer anotações. Construído com create-react-app e React context API.",
+  "LiveDocs": "LiveDocs é um editor de texto colaborativo em tempo real que permite aos usuários editar, comentar e compartilhar documentos de maneira contínua. Construído com Next.js, TypeScript, componentes Shadcn, Clerk para autenticação e Liveblocks para funcionalidades em tempo real. Implantado com Vercel."
+}

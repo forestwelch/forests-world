@@ -1,0 +1,16 @@
+{
+  "About": "关于",
+  "Past Work": "过去的工作",
+  "Projects": "项目",
+  "Contact": "联系方式",
+  "WelcomeFull": "欢迎来到我的世界。",
+  "WelcomeShort": "欢迎。",
+  "Resume": "简历",
+  "Blurb": "从小我就对语言——无论是口语、手语还是编码——充满了兴趣：语言是我们理解和连接的最强大桥梁。作为开发者，我将这份热情转化为创造工具，帮助用户实现他们的潜力。",
+  "Bop": "Bop 是一个单页音乐流媒体应用，允许用户创建和混合播放列表，并关注他们朋友最喜欢的艺术家。使用 Rails、React 和 Redux 构建。",
+  "ThePowerOfFriendship": "《友谊的力量》是一款极简主义解谜平台游戏，方块队伍必须齐心协力才能成功。使用原生 JavaScript、HTML 和 CSS 制作。",
+  "ProjectPhantom": "Project Phantom 是一个 React VR 组件库、npx 构建和文件处理器。我们的团队进入了新兴的 VR 世界，旨在让你更容易跟随。",
+  "Synergia": "Synergía 是一个国际 LGBT 人权组织，致力于赋能本地社会运动。在 GitHub 的半天黑客松上构建。",
+  "Verbling": "一个简单的笔记应用。使用 create-react-app 和 React context API 构建。",
+  "LiveDocs": "LiveDocs 是一个实时协作文本编辑器，允许用户无缝地编辑、评论和分享文档。使用 Next.js、TypeScript、Shadcn 组件、Clerk 进行身份验证和 Liveblocks 提供实时功能。通过 Vercel 部署。"
+}

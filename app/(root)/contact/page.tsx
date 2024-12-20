@@ -42,7 +42,7 @@ const ContactPage = () => {
             better, easier place to live.
             <br />
             <br />
-            Let's make something beautiful together.
+            Let&apos;s make something beautiful together.
           </p>
         </div>
         <form

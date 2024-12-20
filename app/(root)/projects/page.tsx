@@ -46,8 +46,10 @@ const ProjectsPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="p-20 flex flex-col items-center gap-8 fade-in h-full overflow-y-scroll">
-      Take a look at what I got.
+    <section className="p-20 flex flex-col gap-12 fade-in h-full items-center overflow-y-scroll">
+      <h1 className="text-8xl font-thin text-center pt-24">
+        Take a look at what I got.
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map(({ image, descriptionKey, liveLink, githubLink }) => (
           <Project

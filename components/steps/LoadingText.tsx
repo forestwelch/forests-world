@@ -29,11 +29,7 @@ const LoadingText = () => {
     return () => clearTimeout(timeoutId);
   }, [incrementStep]);
 
-  return (
-    <p className="text-4xl font-light cursor-pointer whitespace-nowrap">
-      {phrase}
-    </p>
-  );
+  return <p className="text-4xl font-light whitespace-nowrap">{phrase}</p>;
 };
 
 export default LoadingText;

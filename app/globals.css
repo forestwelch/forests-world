@@ -78,6 +78,10 @@ a:hover::before {
   width: 100%;
 }
 
+a.contact::before {
+  width: 0 !important;
+}
+
 a {
   color: #333;
   cursor: pointer;

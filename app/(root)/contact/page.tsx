@@ -35,9 +35,9 @@ const ContactPage = () => {
   return (
     <section className="p-20 flex flex-col gap-12 fade-in h-full justify-center items-center">
       <h1 className="text-8xl font-thin text-center">Let’s Talk.</h1>
-      <div className="h-96 flex flex-row justify-between items-center gap-8">
-        <div className="flex flex-col justify-center h-full">
-          <p className="text-2xl font-light -mt-20">
+      <div className="md:h-96 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col justify-center">
+          <p className="text-2xl font-light md:-mt-20 text-justify">
             I enjoy working with dedicated teams that want to make the world a
             better, easier place to live.
             <br />

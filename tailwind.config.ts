@@ -7,7 +7,11 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        "2000": "2000ms",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;

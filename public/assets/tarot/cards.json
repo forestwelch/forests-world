@@ -1,0 +1,372 @@
+[
+  {
+    "name": "The Fool",
+    "image": "0 fool.jpeg",
+    "description": "The Fool represents new beginnings, spontaneity, and the leap into the unknown. A fresh journey awaits."
+  },
+  {
+    "name": "The Magician",
+    "image": "1 magician.jpeg",
+    "description": "The Magician symbolizes manifestation, creativity, and the power to make things happen. Harness your inner power."
+  },
+  {
+    "name": "The High Priestess",
+    "image": "2 high priestess.jpeg",
+    "description": "The High Priestess signifies intuition, wisdom, and deep connection to the unconscious mind. Trust your inner voice."
+  },
+  {
+    "name": "The Empress",
+    "image": "3 empress.jpeg",
+    "description": "The Empress embodies fertility, nurturing, and the abundance of life. A time for growth and creativity."
+  },
+  {
+    "name": "The Emperor",
+    "image": "4 emperor.jpeg",
+    "description": "The Emperor symbolizes authority, structure, and control. Step into your power and take charge."
+  },
+  {
+    "name": "The Hierophant",
+    "image": "5 hierophant.jpeg",
+    "description": "The Hierophant represents tradition, wisdom, and spiritual guidance. Seek knowledge from established sources."
+  },
+  {
+    "name": "The Lovers",
+    "image": "6 lovers.jpeg",
+    "description": "The Lovers card speaks of relationships, harmony, and choices. Align your values with those you hold dear."
+  },
+  {
+    "name": "The Chariot",
+    "image": "7 chariot.jpeg",
+    "description": "The Chariot signifies triumph through control, determination, and overcoming obstacles. Your willpower is your strength."
+  },
+  {
+    "name": "Strength",
+    "image": "11 strength.jpeg",
+    "description": "Strength is about inner courage, patience, and resilience. You have the power to face challenges with grace."
+  },
+  {
+    "name": "The Hermit",
+    "image": "9 hermit.jpeg",
+    "description": "The Hermit invites you to find clarity through solitude and reflection. Seek the answers within."
+  },
+  {
+    "name": "Wheel of Fortune",
+    "image": "10 wheel of fortune.jpeg",
+    "description": "The Wheel of Fortune symbolizes cycles of life, luck, and destiny. Embrace the inevitable changes."
+  },
+  {
+    "name": "Justice",
+    "image": "8 justice.jpeg",
+    "description": "Justice stands for fairness, truth, and balance. Your actions are aligned with the law of cause and effect."
+  },
+  {
+    "name": "The Hanged Man",
+    "image": "12 hanged man.jpeg",
+    "description": "The Hanged Man encourages surrender and seeing things from a new perspective. Embrace the pause."
+  },
+  {
+    "name": "Death",
+    "image": "13 death.jpeg",
+    "description": "Death signifies transformation, the end of one phase, and the beginning of another. Embrace the rebirth."
+  },
+  {
+    "name": "Temperance",
+    "image": "14 temperance.jpeg",
+    "description": "Temperance represents balance, moderation, and healing. It's time to blend your energies harmoniously."
+  },
+  {
+    "name": "The Devil",
+    "image": "15 devil.jpeg",
+    "description": "The Devil card speaks of temptation, materialism, and unhealthy attachments. Break free from the chains that bind you."
+  },
+  {
+    "name": "The Tower",
+    "image": "16 tower.jpeg",
+    "description": "The Tower represents sudden upheaval and chaos. Though difficult, this destruction makes way for renewal."
+  },
+  {
+    "name": "The Star",
+    "image": "17 star.jpeg",
+    "description": "The Star is a beacon of hope, inspiration, and spiritual guidance. Keep faith that your dreams will come true."
+  },
+  {
+    "name": "The Moon",
+    "image": "18 moon.jpeg",
+    "description": "The Moon represents illusion, intuition, and the unseen. Trust your instincts, but be cautious of deceit."
+  },
+  {
+    "name": "The Sun",
+    "image": "19 sun.jpeg",
+    "description": "The Sun signifies success, vitality, and joy. A period of happiness and abundance is near."
+  },
+  {
+    "name": "Judgement",
+    "image": "20 judgement.jpeg",
+    "description": "Judgement marks a time of self-reflection, rebirth, and awakening. It's time to answer the call."
+  },
+  {
+    "name": "The World",
+    "image": "21 world.jpeg",
+    "description": "The World represents completion, fulfillment, and the achievement of a long-term goal. Celebrate your success."
+  },
+  {
+    "name": "Ace of Cups",
+    "image": "ace cups.jpeg",
+    "description": "The Ace of Cups signifies emotional fulfillment, love, and new beginnings in relationships."
+  },
+  {
+    "name": "Ace of Pentacles",
+    "image": "ace pentacles.jpeg",
+    "description": "The Ace of Pentacles represents new opportunities in material wealth, career, and security."
+  },
+  {
+    "name": "Ace of Swords",
+    "image": "ace swords.jpeg",
+    "description": "The Ace of Swords symbolizes clarity, truth, and mental breakthroughs. A new idea or perspective is born."
+  },
+  {
+    "name": "Ace of Wands",
+    "image": "ace wands.jpeg",
+    "description": "The Ace of Wands signifies inspiration, creativity, and the spark of new endeavors."
+  },
+  {
+    "name": "Two of Cups",
+    "image": "2 cups.jpeg",
+    "description": "The Two of Cups symbolizes partnerships, love, and mutual respect. A balanced relationship awaits."
+  },
+  {
+    "name": "Two of Pentacles",
+    "image": "2 pentacles.jpeg",
+    "description": "The Two of Pentacles represents balance, adaptability, and juggling priorities."
+  },
+  {
+    "name": "Two of Swords",
+    "image": "2 swords.jpeg",
+    "description": "The Two of Swords speaks of difficult choices and indecision. Trust your intuition to guide you."
+  },
+  {
+    "name": "Two of Wands",
+    "image": "2 wands.jpeg",
+    "description": "The Two of Wands symbolizes planning, progress, and the ambition to explore new horizons."
+  },
+  {
+    "name": "Three of Cups",
+    "image": "3 cups.jpeg",
+    "description": "The Three of Cups signifies celebration, friendship, and unity. Share joy with those you love."
+  },
+  {
+    "name": "Three of Pentacles",
+    "image": "3 pentacles.jpeg",
+    "description": "The Three of Pentacles represents teamwork, collaboration, and the successful completion of projects."
+  },
+  {
+    "name": "Three of Swords",
+    "image": "3 swords.jpeg",
+    "description": "The Three of Swords speaks of heartbreak, sorrow, and emotional pain. Healing is on the horizon."
+  },
+  {
+    "name": "Three of Wands",
+    "image": "3 wands.jpeg",
+    "description": "The Three of Wands symbolizes progress, foresight, and looking ahead to future opportunities."
+  },
+  {
+    "name": "Four of Cups",
+    "image": "4 cups.jpeg",
+    "description": "The Four of Cups speaks of contemplation, boredom, and reevaluation. Seek clarity and purpose."
+  },
+  {
+    "name": "Four of Pentacles",
+    "image": "4 pentacles.jpeg",
+    "description": "The Four of Pentacles represents stability, security, and the desire to hold onto material possessions."
+  },
+  {
+    "name": "Four of Swords",
+    "image": "4 swords.jpeg",
+    "description": "The Four of Swords symbolizes rest, recovery, and taking a break from life's stresses."
+  },
+  {
+    "name": "Four of Wands",
+    "image": "4 wands.jpeg",
+    "description": "The Four of Wands signifies celebration, harmony, and the completion of a significant milestone."
+  },
+  {
+    "name": "Five of Cups",
+    "image": "5 cups.jpeg",
+    "description": "The Five of Cups speaks of grief, regret, and focusing on what’s lost. Look for hope beyond the sorrow."
+  },
+  {
+    "name": "Five of Pentacles",
+    "image": "5 pentacles.jpeg",
+    "description": "The Five of Pentacles represents hardship, lack, and feeling left out. Help is available if you open your heart."
+  },
+  {
+    "name": "Five of Swords",
+    "image": "5 swords.jpeg",
+    "description": "The Five of Swords signifies conflict, competition, and the consequences of a battle won or lost."
+  },
+  {
+    "name": "Five of Wands",
+    "image": "5 wands.jpeg",
+    "description": "The Five of Wands speaks of challenges, competition, and striving for recognition. Embrace the struggle."
+  },
+  {
+    "name": "Six of Cups",
+    "image": "6 cups.jpeg",
+    "description": "The Six of Cups represents nostalgia, memories, and revisiting the past. Embrace the innocence of youth."
+  },
+  {
+    "name": "Six of Pentacles",
+    "image": "6 pentacles.jpeg",
+    "description": "The Six of Pentacles symbolizes generosity, balance, and fairness in giving and receiving."
+  },
+  {
+    "name": "Six of Swords",
+    "image": "6 swords.jpeg",
+    "description": "The Six of Swords represents transition, moving on, and seeking calmer waters after troubled times."
+  },
+  {
+    "name": "Six of Wands",
+    "image": "6 wands.jpeg",
+    "description": "The Six of Wands symbolizes victory, recognition, and public achievement. Celebrate your success."
+  },
+  {
+    "name": "Seven of Cups",
+    "image": "7 cups.jpeg",
+    "description": "The Seven of Cups speaks of choices, dreams, and illusions. Stay grounded when considering your options."
+  },
+  {
+    "name": "Seven of Pentacles",
+    "image": "7 pentacles.jpeg",
+    "description": "The Seven of Pentacles symbolizes patience, growth, and the rewards of hard work."
+  },
+  {
+    "name": "Seven of Swords",
+    "image": "7 swords.jpeg",
+    "description": "The Seven of Swords speaks of stealth, strategy, and secrecy. Be cautious of hidden motives."
+  },
+  {
+    "name": "Seven of Wands",
+    "image": "7 wands.jpeg",
+    "description": "The Seven of Wands symbolizes defense, courage, and standing your ground against opposition."
+  },
+  {
+    "name": "Eight of Cups",
+    "image": "8 cups.jpeg",
+    "description": "The Eight of Cups represents leaving something behind in pursuit of greater meaning and fulfillment."
+  },
+  {
+    "name": "Eight of Pentacles",
+    "image": "8 pentacles.jpeg",
+    "description": "The Eight of Pentacles signifies hard work, mastery, and the dedication to craft."
+  },
+  {
+    "name": "Eight of Swords",
+    "image": "8 swords.jpeg",
+    "description": "The Eight of Swords represents mental restrictions, fear, and self-imposed limitations. Break free from them."
+  },
+  {
+    "name": "Eight of Wands",
+    "image": "8 wands.jpeg",
+    "description": "The Eight of Wands speaks of speed, movement, and swift action. Things are moving quickly now."
+  },
+  {
+    "name": "Nine of Cups",
+    "image": "9 cups.jpeg",
+    "description": "The Nine of Cups signifies contentment, fulfillment, and the realization of your desires."
+  },
+  {
+    "name": "Nine of Pentacles",
+    "image": "9 pentacles.jpeg",
+    "description": "The Nine of Pentacles symbolizes luxury, self-sufficiency, and enjoying the fruits of your labor."
+  },
+  {
+    "name": "Nine of Swords",
+    "image": "9 swords.jpeg",
+    "description": "The Nine of Swords speaks of anxiety, stress, and sleepless nights. Let go of what’s haunting you."
+  },
+  {
+    "name": "Nine of Wands",
+    "image": "9 wands.jpeg",
+    "description": "The Nine of Wands signifies persistence, resilience, and the ability to keep going despite adversity."
+  },
+  {
+    "name": "Daughter of Cups",
+    "image": "daughter cups.jpeg",
+    "description": "The Daughter of Cups represents emotional exploration, creativity, and a youthful, romantic spirit."
+  },
+  {
+    "name": "Daughter of Pentacles",
+    "image": "daughter pentacles.jpeg",
+    "description": "The Daughter of Pentacles speaks of practicality, diligence, and a grounded approach to life’s challenges."
+  },
+  {
+    "name": "Daughter of Swords",
+    "image": "daughter swords.jpeg",
+    "description": "The Daughter of Swords represents mental clarity, observation, and the thirst for knowledge."
+  },
+  {
+    "name": "Daughter of Wands",
+    "image": "daughter wands.jpeg",
+    "description": "The Daughter of Wands symbolizes creativity, passion, and an adventurous, spirited energy."
+  },
+  {
+    "name": "Father of Cups",
+    "image": "father cups.jpeg",
+    "description": "The Father of Cups signifies emotional mastery, balance, and the ability to navigate complex feelings."
+  },
+  {
+    "name": "Father of Pentacles",
+    "image": "father pentacles.jpeg",
+    "description": "The Father of Pentacles embodies stability, security, and the wise use of material resources."
+  },
+  {
+    "name": "Father of Swords",
+    "image": "father swords.jpeg",
+    "description": "The Father of Swords represents clarity, logic, and intellectual strength. Use your mind to make decisions."
+  },
+  {
+    "name": "Father of Wands",
+    "image": "father wands.jpeg",
+    "description": "The Father of Wands symbolizes leadership, creativity, and the drive to inspire others with your vision."
+  },
+  {
+    "name": "Mother of Cups",
+    "image": "mother cups.jpeg",
+    "description": "The Mother of Cups represents nurturing, compassion, and emotional intuition."
+  },
+  {
+    "name": "Mother of Pentacles",
+    "image": "mother pentacles.jpeg",
+    "description": "The Mother of Pentacles speaks of practicality, care for others, and the ability to create abundance."
+  },
+  {
+    "name": "Mother of Swords",
+    "image": "mother swords.jpeg",
+    "description": "The Mother of Swords embodies intellect, perception, and the power to discern truth."
+  },
+  {
+    "name": "Mother of Wands",
+    "image": "mother wands.jpeg",
+    "description": "The Mother of Wands represents nurturing creativity, independence, and the courage to take bold actions."
+  },
+  {
+    "name": "Son of Cups",
+    "image": "son cups.jpeg",
+    "description": "The Son of Cups symbolizes emotional exploration, romanticism, and idealism."
+  },
+  {
+    "name": "Son of Pentacles",
+    "image": "son pentacles.jpeg",
+    "description": "The Son of Pentacles speaks of diligence, responsibility, and commitment to long-term goals."
+  },
+  {
+    "name": "Son of Swords",
+    "image": "son swords.jpeg",
+    "description": "The Son of Swords represents intellectual agility, communication, and swift action."
+  },
+  {
+    "name": "Son of Wands",
+    "image": "son wands.jpeg",
+    "description": "The Son of Wands embodies creativity, enthusiasm, and the drive to achieve new heights."
+  }
+]

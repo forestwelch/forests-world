@@ -87,7 +87,7 @@ a {
   color: #ccc;
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -97,5 +97,5 @@ a {
 }
 
 .fade-in {
-  animation: fade-in 1s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
 }

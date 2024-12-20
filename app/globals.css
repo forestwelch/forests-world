@@ -141,7 +141,7 @@ button {
 
 input::placeholder,
 textarea::placeholder {
-  color: #ccc;
+  color: #333;
 }
 
 .dark input::placeholder,

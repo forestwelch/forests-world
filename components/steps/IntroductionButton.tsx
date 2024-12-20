@@ -7,7 +7,7 @@ const IntroductionButton = () => {
     <div className="flex flex-col justify-center items-center">
       <button
         onClick={incrementStep}
-        className="mt-4 p-4 text-2xl font-light transition:bg duration-2000 hover:bg-emerald-950 rounded-xl border-dotted border border-gray-100"
+        className="mt-4 p-4 text-2xl font-light transition:bg duration-2000 hover:bg-emerald-100/10 dark:hover:bg-emerald-950/50 rounded-xl border-dotted border border-gray-100"
       >
         Commence your tarot reading.
       </button>

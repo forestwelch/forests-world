@@ -32,7 +32,7 @@ const LanguageToggle = () => {
   return (
     <div className="w-6 text-center">
       <a
-        className="language-toggle inline-block p-1.5 m-2 text-md font-light relative transition-opacity duration-300"
+        className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
         style={{ opacity: visible ? 1 : 0 }}
         onClick={changeLanguage}
       >

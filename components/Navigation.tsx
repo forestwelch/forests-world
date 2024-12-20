@@ -17,21 +17,33 @@ const Navigation = () => {
           height={40}
         />
         <div className="flex items-center space-x-8">
-          <Link href="/" className="text-white hover:text-gray-300">
+          <Link
+            className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
+            href="/"
+          >
             Home
           </Link>
-          <Link href="/projects" className="text-white hover:text-gray-300">
+          <Link
+            className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
+            href="/projects"
+          >
             Projects
           </Link>
-          <Link href="/tarot" className="text-white hover:text-gray-300">
+          <Link
+            className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
+            href="/tarot"
+          >
             Tarot
           </Link>
-          <Link href="/contact" className="text-white hover:text-gray-300">
+          <Link
+            className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
+            href="/contact"
+          >
             Contact
           </Link>
           <Link
+            className="inline-block p-1.5 m-2 text-md font-light relative transition-color duration-1000"
             href="/assets/resume.pdf"
-            className="text-white hover:text-gray-300"
           >
             Resume
           </Link>

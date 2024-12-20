@@ -16,7 +16,7 @@ export const useStep = () => {
   return context;
 };
 
-export const StepProvider = ({ children }: { children: React.ReactNode[] }) => {
+export const StepProvider = ({ children }: { children: React.ReactNode }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
 

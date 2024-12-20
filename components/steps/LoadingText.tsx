@@ -1,10 +1,27 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useStep } from "../StepContext";
+
+const mysticalPhrases = [
+  "Consulting the universe...",
+  "Channeling cosmic energy...",
+  "Aligning with the stars...",
+  "Seeking hidden truths...",
+  "Opening the gateway of knowledge...",
+  "Tuning into the ethereal frequencies...",
+  "Communing with the infinite...",
+  "Exploring the unknown realms...",
+  "Receiving divine wisdom...",
+  "Unlocking the secrets of the universe...",
+];
 
 const LoadingText = () => {
   const { incrementStep } = useStep();
+
+  const [phrase] = useState(
+    mysticalPhrases[Math.floor(Math.random() * mysticalPhrases.length)]
+  );
 
   useEffect(() => {
     const timeoutId = setTimeout(incrementStep, 4000);
@@ -12,7 +29,11 @@ const LoadingText = () => {
     return () => clearTimeout(timeoutId);
   }, [incrementStep]);
 
-  return <p className="text-xl">Consulting the universe...</p>;
+  return (
+    <p className="text-4xl font-light cursor-pointer whitespace-nowrap">
+      {phrase}
+    </p>
+  );
 };
 
 export default LoadingText;

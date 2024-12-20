@@ -9,12 +9,12 @@ const ContactPage = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     // e.preventDefault();
     // // Use EmailJS or Formspree to send the email
     // // For example, using EmailJS:

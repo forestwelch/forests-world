@@ -3,22 +3,8 @@
 import IntroductionButton from "@/components/steps/IntroductionButton";
 import LoadingText from "@/components/steps/LoadingText";
 import CardReveal from "@/components/steps/CardReveal";
-import React, { useState } from "react";
-
-const useStep = (steps: React.ReactNode[]) => {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [fadeOut, setFadeOut] = useState(false);
-  const incrementStep = async () => {
-    setFadeOut(true);
-
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    setCurrentStep((prev) => (prev + 1) % steps.length);
-    setFadeOut(false);
-  };
-
-  return { currentStep, fadeOut, incrementStep };
-};
+import React from "react";
+import useStep from "@/lib/hooks/useStep";
 
 const StepTransition = () => {
   const steps: React.ReactNode[] = [

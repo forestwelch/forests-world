@@ -5,16 +5,9 @@ import LoadingText from "@/components/steps/LoadingText";
 import CardReveal from "@/components/steps/CardReveal";
 import React, { useState } from "react";
 
-const StepTransition = () => {
+const useStep = (steps: React.ReactNode[]) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
-
-  const steps = [
-    <IntroductionButton key="step-1" />,
-    <LoadingText key="step-2" />,
-    <CardReveal key="step-3" />,
-  ];
-
   const incrementStep = async () => {
     setFadeOut(true);
 
@@ -23,6 +16,18 @@ const StepTransition = () => {
     setCurrentStep((prev) => (prev + 1) % steps.length);
     setFadeOut(false);
   };
+
+  return { currentStep, fadeOut, incrementStep };
+};
+
+const StepTransition = () => {
+  const steps: React.ReactNode[] = [
+    <IntroductionButton key="step-1" />,
+    <LoadingText key="step-2" />,
+    <CardReveal key="step-3" />,
+  ];
+
+  const { currentStep, fadeOut, incrementStep } = useStep(steps);
 
   return (
     <div className="p-20 flex flex-col gap-8 fade-in">

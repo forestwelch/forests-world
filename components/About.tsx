@@ -6,7 +6,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="p-20 flex flex-col gap-8 fade-in">
+    <section className="p-20 flex flex-col gap-8 fade-in h-full justify-center items-center">
       <h1 className="text-8xl font-thin text-center lg:hidden">
         {t("WelcomeShort")}
       </h1>

@@ -108,3 +108,39 @@ a {
 .fade-in {
   animation: fadeIn 1s ease-in forwards;
 }
+
+input,
+textarea {
+  border-color: #333;
+}
+
+.dark input,
+.dark textarea {
+  border-color: #ccc;
+}
+
+button {
+  border-color: #333;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.dark button {
+  border-color: #ccc;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #ccc;
+}

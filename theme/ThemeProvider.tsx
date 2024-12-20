@@ -25,7 +25,7 @@ const ThemeContext = createContext<
 >(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<string | null>(null);
+  const [theme, setTheme] = useState<string | null>("dark");
 
   useLayoutEffect(() => {
     const savedTheme = localStorage.getItem("theme");

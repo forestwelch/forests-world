@@ -21,13 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <I18nProvider>
-      <ThemeProvider>
-        <body className={`${dmSans.variable}  antialiased`}>
-          <Navigation />
-          {children}
-        </body>
-      </ThemeProvider>
-    </I18nProvider>
+    <html className="dark">
+      <I18nProvider>
+        <ThemeProvider>
+          <body className={`${dmSans.variable} antialiased min-h-screen`}>
+            <Navigation />
+            {children}
+          </body>
+        </ThemeProvider>
+      </I18nProvider>
+    </html>
   );
 }

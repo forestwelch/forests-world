@@ -1,9 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
@@ -14,26 +21,41 @@ const ContactPage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
-    // e.preventDefault();
-    // // Use EmailJS or Formspree to send the email
-    // // For example, using EmailJS:
-    // emailjs
-    //   .sendForm("your_service_id", "your_template_id", e.target, "your_user_id")
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       // Optionally show a success message here
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       // Optionally show an error message here
-    //     }
-    //   );
+  const [status, setStatus] = useState("");
+
+  interface EmailJSResponse {
+    text: string;
+  }
+
+  interface EmailJSError {
+    text: string;
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_u649y0i",
+        "template_qwn6d83",
+        e.target as HTMLFormElement,
+        {
+          publicKey: "yMN-k1fnQZjnrX1j7",
+        }
+      )
+      .then(
+        (result: EmailJSResponse) => {
+          console.log(result.text);
+          setStatus("Message sent.");
+        },
+        (error: EmailJSError) => {
+          console.log(error.text);
+          setStatus("Please try again.");
+        }
+      );
   };
 
   return (
-    <section className="p-20 flex flex-col gap-12 fade-in h-full justify-center items-center">
+    <section className="p-20 flex flex-col gap-12 fade-in h-full  items-center">
       <h1 className="text-8xl font-thin text-center">Let’s Talk.</h1>
       <div className="md:h-96 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col justify-center">
@@ -81,6 +103,11 @@ const ContactPage = () => {
           >
             Send
           </button>
+          {status && (
+            <p className="text-center text-lg font-light fade-in mt-10">
+              {status}
+            </p>
+          )}
         </form>
       </div>
     </section>

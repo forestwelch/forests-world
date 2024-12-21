@@ -8,7 +8,7 @@ import LanguageToggle from "./LanguageToggle";
 
 const Navigation = () => {
   return (
-    <div className="w-full text-gray-400 bg-black bg-opacity-20 sm:w-full fixed z-10">
+    <div className="w-full text-gray-400 bg-black bg-opacity-20 sm:w-full mb-24">
       <div className="px-8 py-2 flex items-center justify-between">
         <Image
           src="/assets/images/logo.webp"

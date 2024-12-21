@@ -46,8 +46,8 @@ const ProjectsPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="p-20 flex flex-col gap-12 fade-in h-full items-center overflow-y-scroll">
-      <h1 className="text-8xl font-thin text-center pt-24">
+    <section className="p-20 flex flex-col gap-12 fade-in h-full  items-center overflow-y-scroll">
+      <h1 className="text-8xl font-thin text-center">
         Take a look at what I got.
       </h1>
       <div className="flex flex-wrap justify-center gap-8">

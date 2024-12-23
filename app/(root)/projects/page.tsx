@@ -46,10 +46,8 @@ const ProjectsPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="p-20 flex flex-col gap-12 fade-in h-full  items-center overflow-y-scroll">
-      <h1 className="text-8xl font-thin text-center">
-        Take a look at what I got.
-      </h1>
+    <>
+      <h1>Take a look at what I got.</h1>
       <div className="flex flex-wrap justify-center gap-8">
         {projects.map(({ image, descriptionKey, liveLink, githubLink }) => (
           <Project
@@ -61,7 +59,7 @@ const ProjectsPage = () => {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 };
 

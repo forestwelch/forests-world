@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  user-select: none;
-  font-family: var(--font-dm-sans), sans-serif;
-  transition: color 1s ease-in-out;
-  color: #333;
+.background {
+  position: fixed;
+  inset: 0;
 
   background: linear-gradient(
       217deg,
@@ -16,13 +14,14 @@ body {
     linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
     white;
-  background-size: 300% 300%;
+  background-size: 300%;
   animation: gradient 20s ease infinite;
   transition: background 1s ease-in-out;
+
+  z-index: -1;
 }
 
-/* Dark mode background gradient */
-.dark body {
+.dark .background {
   background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.3),
@@ -31,15 +30,13 @@ body {
     linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%),
     black;
-  background-size: 300% 300%;
+  background-size: 300%;
   animation: gradient 20s ease infinite;
   transition: background 1s ease-in-out;
-
-  color: #ccc;
 }
 
 @media (max-width: 768px) {
-  body {
+  .background {
     background-size: 200% 200%;
   }
 }
@@ -60,6 +57,19 @@ body {
   100% {
     background-position: 0% 0%;
   }
+}
+
+body {
+  user-select: none;
+  font-family: var(--font-dm-sans), sans-serif;
+  transition: color 1s ease-in-out;
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.dark body {
+  color: #ccc;
 }
 
 a::before {
@@ -83,6 +93,7 @@ a.contact::before {
 }
 
 a {
+  position: relative;
   color: #333;
   cursor: pointer;
   transition: color 1s ease-in-out;
@@ -140,11 +151,17 @@ button {
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+.icon {
   color: #333;
 }
 
 .dark input::placeholder,
-.dark textarea::placeholder {
+.dark textarea::placeholder,
+.dark .icon {
   color: #ccc;
+}
+
+h1 {
+  @apply text-6xl font-thin text-center md:text-8xl;
 }

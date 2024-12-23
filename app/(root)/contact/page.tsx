@@ -33,6 +33,7 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "service_u649y0i",
@@ -55,8 +56,8 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="p-20 flex flex-col gap-12 fade-in h-full  items-center">
-      <h1 className="text-8xl font-thin text-center">Let’s Talk.</h1>
+    <>
+      <h1>Let’s Talk.</h1>
       <div className="md:h-96 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col justify-center">
           <p className="text-2xl font-light md:-mt-20 text-justify">
@@ -94,7 +95,7 @@ const ContactPage = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="bg-transparent border-b-2 p-2 focus:outline-none h-48 resize-none placeholder:font-light placeholder:text-xl"
+            className="bg-transparent border-b-2 p-2 focus:outline-none h-48 resize-none overflow-hidden placeholder:font-light placeholder:text-xl"
             required
           />
           <button
@@ -103,14 +104,16 @@ const ContactPage = () => {
           >
             Send
           </button>
-          {status && (
-            <p className="text-center text-lg font-light fade-in mt-10">
-              {status}
-            </p>
-          )}
+          <div className="relative w-full flex justify-center items-center">
+            {status && (
+              <p className="absolute text-center text-lg font-light fade-in mt-10">
+                {status}
+              </p>
+            )}
+          </div>
         </form>
       </div>
-    </section>
+    </>
   );
 };
 

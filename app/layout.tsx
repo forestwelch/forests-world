@@ -22,14 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html className="dark">
-      <I18nProvider>
-        <ThemeProvider>
-          <body className={`${dmSans.variable} antialiased min-h-screen`}>
+      <body className={`${dmSans.variable} antialiased`}>
+        <I18nProvider>
+          <ThemeProvider>
             <Navigation />
-            {children}
-          </body>
-        </ThemeProvider>
-      </I18nProvider>
+            <section className="p-8 lg:p-20 flex flex-col gap-8 fade-in items-center">
+              {children}
+            </section>
+          </ThemeProvider>
+        </I18nProvider>
+      </body>
     </html>
   );
 }

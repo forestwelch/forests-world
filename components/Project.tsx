@@ -29,7 +29,7 @@ const Project = ({
       <p className="mt-4 text-base font-light">{description}</p>
       <ul className="flex gap-4 mt-4">
         {liveLink && (
-          <li className="relative">
+          <li>
             <Link
               className="font-medium text-lg"
               href={liveLink}
@@ -41,7 +41,7 @@ const Project = ({
           </li>
         )}
         {githubLink && (
-          <li className="relative">
+          <li>
             <Link
               className="font-medium text-lg"
               href={githubLink}

@@ -16,7 +16,7 @@ const Project = ({
   githubLink?: string;
 }) => {
   return (
-    <div className="bg-black/20 rounded-xl p-8 w-80 flex flex-col items-center text-center">
+    <div className="bg-black/20 rounded-xl p-8 w-full sm:w-80 flex flex-col items-center text-center">
       <Image
         loading="lazy"
         className="w-full h-48 object-cover rounded-xl"

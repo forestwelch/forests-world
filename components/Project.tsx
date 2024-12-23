@@ -31,7 +31,7 @@ const Project = ({
         {liveLink && (
           <li>
             <Link
-              className="font-medium text-lg"
+              className="font-medium text-lg p-2"
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Project = ({
         {githubLink && (
           <li>
             <Link
-              className="font-medium text-lg"
+              className="font-medium text-lg p-2"
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"

@@ -134,7 +134,7 @@ textarea {
   border-color: #ccc;
 }
 
-button {
+.button {
   border-color: #333;
 
   &:hover {
@@ -142,7 +142,7 @@ button {
   }
 }
 
-.dark button {
+.dark .button {
   border-color: #ccc;
 
   &:hover {

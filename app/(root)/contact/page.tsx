@@ -60,7 +60,7 @@ const ContactPage = () => {
       <h1>Let’s Talk.</h1>
       <div className="md:h-96 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col justify-center">
-          <p className="text-2xl font-light md:-mt-20 text-justify">
+          <p className="text-xl md:text-2xl font-light md:-mt-20 text-center md:text-justify">
             I enjoy working with dedicated teams that want to make the world a
             better, easier place to live.
             <br />
@@ -78,7 +78,7 @@ const ContactPage = () => {
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
-            className="bg-transparent border-b-2 p-2 focus:outline-none placeholder:font-light placeholder:text-xl"
+            className="bg-transparent border-b-2 p-2 focus:outline-none placeholder:font-light placeholder:text-xl rounded-none"
             required
           />
           <input
@@ -87,7 +87,7 @@ const ContactPage = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="bg-transparent border-b-2 p-2 focus:outline-none placeholder:font-light placeholder:text-xl"
+            className="bg-transparent border-b-2 p-2 focus:outline-none placeholder:font-light placeholder:text-xl rounded-none"
             required
           />
           <textarea
@@ -95,12 +95,12 @@ const ContactPage = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="bg-transparent border-b-2 p-2 focus:outline-none h-48 resize-none overflow-hidden placeholder:font-light placeholder:text-xl"
+            className="bg-transparent border-b-2 p-2 focus:outline-none h-48 resize-none overflow-hidden placeholder:font-light placeholder:text-xl rounded-none"
             required
           />
           <button
             type="submit"
-            className="w-32 self-end mt-4 p-2 text-xl font-light transition:bg duration-2000 rounded-xl border-dotted border"
+            className="w-32 self-end mt-4 p-2 text-xl font-light transition:bg duration-2000 rounded-xl border-dotted border button"
           >
             Send
           </button>

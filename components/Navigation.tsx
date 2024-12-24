@@ -34,12 +34,6 @@ const Navigation = () => {
 
         {/* Navigation Links */}
         <div className="items-center space-x-8 hidden lg:flex">
-          <Link className="p-1.5 m-2 text-md font-light" href="/">
-            Home
-          </Link>
-          <Link className="p-1.5 m-2 text-md font-light" href="/projects">
-            Projects
-          </Link>
           <Link className="p-1.5 m-2 text-md font-light" href="/tarot">
             Tarot
           </Link>

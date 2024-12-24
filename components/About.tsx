@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-center gap-8">
+    <div className="flex flex-col lg:flex-row items-start justify-center gap-8 max-w-screen-xl mx-auto">
       <div className="flex flex-col lg:flex-1 lg:sticky lg:top-16 gap-y-4">
         <h1 className="text-6xl font-light tracking-tight text-left">
           Forest Welch

@@ -2,9 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Projects from "./Projects";
+import StepTransition from "./StepTransition";
+import { useStep } from "./StepContext";
 
 const About = () => {
   const { t } = useTranslation();
+  const { incrementStep } = useStep();
 
   return (
     <div className="flex flex-col lg:flex-row items-start justify-center gap-8 max-w-screen-xl mx-auto">
@@ -24,9 +27,10 @@ const About = () => {
           I build user-friendly apps to make the digital
           <br /> world more intuitive and beautiful.
         </p>
+        <StepTransition />
       </div>
-      <section className="lg:flex-1">
-        <p className="lg:hidden text-lg tracking-tight font-semibold pb-4">
+      <section className="flex flex-col lg:flex-1 gap-y-8">
+        <p className="lg:hidden text-lg tracking-tight font-semibold">
           About Me
         </p>
         <p className="text-md">
@@ -57,10 +61,10 @@ const About = () => {
           <br />
           <br />
           When I’m not coding, I’m likely practicing yoga, meditating in nature,
-          <button>doing tarot readings</button>, tinkering with retro consoles,
-          or playing Kingdom Hearts. I’m a software engineer with a passion for
-          creating unique, user-friendly applications that make the digital
-          world more intuitive and beautiful.
+          <button onClick={incrementStep}>doing tarot readings</button>,
+          tinkering with retro consoles, or playing Kingdom Hearts. I’m a
+          software engineer with a passion for creating unique, user-friendly
+          applications that make the digital world more intuitive and beautiful.
         </p>
         <Projects />
       </section>

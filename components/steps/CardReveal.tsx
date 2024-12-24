@@ -6,8 +6,8 @@ const CardReveal = () => {
   const card = tarotCards[Math.floor(Math.random() * tarotCards.length)];
 
   return (
-    <figure className="flex flex-col justify-center items-center gap-8">
-      <h2 className="text-8xl font-thin text-center">{card.name}</h2>
+    <figure className="flex flex-col gap-8">
+      <h2 className="text-4xl font-light">{card.name}</h2>
       <Image
         src={`/assets/tarot/images/${card.image}`}
         alt={card.name}
@@ -15,15 +15,9 @@ const CardReveal = () => {
         height={300}
         className="rounded-2xl"
       />
-      <figcaption className="text-xl font-light text-center">
-        {card.description}
-      </figcaption>
-      <p className="text-lg font-light text-center">
-        If you would like more, please{" "}
-        <Link className="font-bold contact" href="/contact">
-          ask me
-        </Link>{" "}
-        about my current rates.
+      <figcaption className="text-lg font-light">{card.description}</figcaption>
+      <p className="text-md font-light">
+        If you would like more, please contact me about my current rates.
       </p>
     </figure>
   );

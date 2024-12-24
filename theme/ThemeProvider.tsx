@@ -1,11 +1,6 @@
 "use client";
 
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useLayoutEffect,
-} from "react";
+import React, { createContext, useContext, useState } from "react";
 
 /**
  * Function to reset body styles after the theme change.
@@ -15,51 +10,26 @@ import React, {
  * We explicitly reset these styles to ensure the page layout remains stable
  * and prevents unexpected scrolling or layout issues.
  */
-const disableBodyLock = () => {
-  // document.body.style.overflowY = "auto";
-  document.body.style.paddingRight = "0px";
-};
 
 const ThemeContext = createContext<
   { theme: string; toggleTheme: () => void } | undefined
 >(undefined);
 
-export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<string | null>("dark");
-
-  useLayoutEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setTheme("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      setTheme("light");
-    }
-
-    // Force reset after theme is applied
-    setTimeout(disableBodyLock, 100);
-  }, []);
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const [theme, setTheme] = useState<string | null>(
+    localStorage.getItem("theme")
+  );
 
   const toggleTheme = () => {
-    const newTheme = document.documentElement.classList.contains("dark")
-      ? "light"
-      : "dark";
-    document.documentElement.classList.toggle("dark");
+    const newTheme = theme === "light" ? "dark" : "light";
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
-
-    // Reset styles after theme toggle
-    setTimeout(disableBodyLock, 100);
   };
 
-  if (theme === null) {
-    return null;
-  }
+  if (!theme) return null;
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="background" />
       {children}
     </ThemeContext.Provider>
   );
@@ -72,3 +42,5 @@ export const useTheme = () => {
   }
   return context;
 };
+
+export default ThemeProvider;

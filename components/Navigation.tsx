@@ -34,9 +34,6 @@ const Navigation = () => {
 
         {/* Navigation Links */}
         <div className="items-center space-x-8 hidden lg:flex">
-          <Link className="p-1.5 m-2 text-md font-light" href="/tarot">
-            Tarot
-          </Link>
           <Link className="p-1.5 m-2 text-md font-light" href="/contact">
             Contact
           </Link>
@@ -65,27 +62,6 @@ const Navigation = () => {
           <XMarkIcon className="h-8 w-8" />
         </button>
 
-        <Link
-          className="p-4 text-xl font-light text-gray-300"
-          href="/"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Home
-        </Link>
-        <Link
-          className="p-4 text-xl font-light text-gray-300"
-          href="/projects"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Projects
-        </Link>
-        <Link
-          className="p-4 text-xl font-light text-gray-300"
-          href="/tarot"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Tarot
-        </Link>
         <Link
           className="p-4 text-xl font-light text-gray-300"
           href="/contact"

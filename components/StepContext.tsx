@@ -1,7 +1,6 @@
 "use client";
 
 import React, { createContext, useContext, useMemo, useState } from "react";
-import IntroductionButton from "./steps/IntroductionButton";
 import LoadingText from "./steps/LoadingText";
 import CardReveal from "./steps/CardReveal";
 
@@ -16,18 +15,14 @@ export const useStep = () => {
   return context;
 };
 
-export const StepProvider = ({ children }: { children: React.ReactNode }) => {
+const StepProvider = ({ children }: { children: React.ReactNode }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
 
   console.log({ currentStep }, "StepProvider");
 
   const steps = useMemo(
-    () => [
-      <IntroductionButton key="step-1" />,
-      <LoadingText key="step-2" />,
-      <CardReveal key="step-3" />,
-    ],
+    () => [<></>, <LoadingText key="step-2" />, <CardReveal key="step-3" />],
     []
   );
 
@@ -49,3 +44,5 @@ export const StepProvider = ({ children }: { children: React.ReactNode }) => {
     </StepContext.Provider>
   );
 };
+
+export default StepProvider;

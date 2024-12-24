@@ -61,16 +61,16 @@
 }
 
 body {
+  @apply text-gray-800;
   user-select: none;
   font-family: var(--font-dm-sans), sans-serif;
   transition: color 1s ease-in-out;
-  color: #333;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .dark body {
-  color: #ccc;
+  @apply text-gray-300;
 }
 
 a::before {
@@ -94,22 +94,13 @@ a.contact::before {
 }
 
 a {
-  position: relative;
-  color: #333;
+  @apply relative text-gray-800;
   cursor: pointer;
   transition: color 1s ease-in-out;
-
-  &:hover {
-    color: #aaa;
-  }
 }
 
 .dark a {
-  color: #ccc;
-
-  &:hover {
-    color: #555;
-  }
+  @apply text-gray-300;
 }
 
 @keyframes fadeIn {
@@ -127,16 +118,16 @@ a {
 
 input,
 textarea {
-  border-color: #333;
+  @apply border-gray-800;
 }
 
 .dark input,
 .dark textarea {
-  border-color: #ccc;
+  @apply border-gray-300;
 }
 
 .button {
-  border-color: #333;
+  @apply border-gray-800;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -144,7 +135,7 @@ textarea {
 }
 
 .dark .button {
-  border-color: #ccc;
+  @apply border-gray-300;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -154,13 +145,13 @@ textarea {
 input::placeholder,
 textarea::placeholder,
 .icon {
-  color: #333;
+  @apply text-gray-800;
 }
 
 .dark input::placeholder,
 .dark textarea::placeholder,
 .dark .icon {
-  color: #ccc;
+  @apply text-gray-300;
 }
 
 h1 {

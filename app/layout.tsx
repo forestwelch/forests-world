@@ -4,6 +4,7 @@ import "./globals.css";
 import I18nProvider from "@/i18n/I18nProvider";
 import Navigation from "@/components/Navigation";
 import { ThemeProvider } from "@/theme/ThemeProvider";
+import Cursor from "@/components/Cursor";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({
         <I18nProvider>
           <ThemeProvider>
             <Navigation />
-            <section className="p-8 lg:p-20 flex flex-col gap-8 fade-in items-center">
+            <section className="p-12 flex flex-col gap-8 fade-in">
               {children}
             </section>
           </ThemeProvider>

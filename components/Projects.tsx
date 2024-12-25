@@ -6,6 +6,25 @@ import Project from "@/components/Project";
 
 const projects = [
   {
+    image: "/assets/images/visio.webp",
+    name: "Visio",
+    descriptionKey: "Visio",
+    liveLink: "https://visio-virid-phi.vercel.app/",
+    githubLink: "https://github.com/nwelchr/visio",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "OpenAI",
+      "DALL-E",
+      "Cloudinary",
+      "Render",
+      "Vercel",
+    ],
+  },
+  {
     image: "/assets/images/livedocs.webp",
     name: "LiveDocs App",
     descriptionKey: "LiveDocs",

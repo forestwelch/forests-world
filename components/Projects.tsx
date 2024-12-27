@@ -92,7 +92,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-wrap justify-center gap-8 group">
+    <div className="flex flex-wrap justify-center gap-12 group">
       {projects.map(
         ({
           image,

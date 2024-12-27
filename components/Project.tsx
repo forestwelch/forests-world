@@ -28,7 +28,7 @@ const Project = ({
 
   return (
     <div
-      className="gap-8 lg:group-hover:opacity-50 bg-transparent rounded-xl p-4 flex flex-row transition-opacity transition-bg duration-300 lg:hover:bg-black/10 lg:hover:!opacity-100 opacity-75 lg:cursor-pointer"
+      className="group/link gap-4 sm:p-4 lg:group-hover:opacity-50 bg-transparent rounded-xl flex flex-row max-sm:flex-col-reverse transition-opacity transition-bg duration-300 lg:hover:bg-black/10 lg:hover:!opacity-100 sm:opacity-75 lg:cursor-pointer"
       onClick={handleClick}
     >
       <Image
@@ -42,7 +42,7 @@ const Project = ({
       />
       <div className="flex flex-col gap-y-2">
         <Link
-          className="font-medium"
+          className="font-medium lg:group-hover/link:text-violet-400 hover:text-violet-400"
           href={liveLink.toString()}
           target="_blank"
           rel="noopener noreferrer"

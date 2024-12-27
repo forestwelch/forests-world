@@ -17,7 +17,7 @@ const Home = () => {
   const { incrementStep } = useStep();
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-screen-xl mx-auto lg:py-0 p-12">
+    <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-screen-xl mx-auto lg:py-0 p-8 sm:p-12">
       <header className="flex flex-col justify-between lg:sticky lg:top-0 lg:py-24 max-h-screen lg:flex-1">
         <section aria-labelledby="site-title">
           <div className="flex items-center gap-4">

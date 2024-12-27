@@ -92,7 +92,7 @@ const experiences = [
 const Experiences = () => {
   return (
     <div className="flex flex-col gap-y-8">
-      <div className="flex flex-wrap justify-center gap-8 group">
+      <div className="flex flex-wrap justify-center gap-12 group">
         {experiences.map(
           (
             { role, company, companyLink, dates, description, technologies },

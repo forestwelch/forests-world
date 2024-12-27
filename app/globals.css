@@ -17,7 +17,7 @@
     white;
   background-size: 300%;
   animation: gradient 20s ease infinite;
-  transition: background 1s ease-in-out;
+  transition: background 500ms ease-in-out;
 
   z-index: -1;
 }
@@ -33,7 +33,7 @@
     black;
   background-size: 300%;
   animation: gradient 20s ease infinite;
-  transition: background 1s ease-in-out;
+  transition: background 500ms ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -63,7 +63,7 @@
 body {
   @apply text-gray-800;
   font-family: var(--font-dm-sans), sans-serif;
-  transition: color 1s ease-in-out;
+  transition: color 500ms ease-in-out;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 1s ease-in forwards;
+  animation: fadeIn 500ms ease-in forwards;
 }
 
 input,

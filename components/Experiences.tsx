@@ -78,15 +78,6 @@ const experiences = [
       "CSS",
     ],
   },
-  {
-    role: "Mentor & Educator",
-    company: "iTalki",
-    companyLink: "https://www.italki.com/",
-    dates: "2018 - 2020",
-    description:
-      "Taught personalized French, ASL, and English lessons to over 1000 students, while providing mentorship and guidance to language learners.",
-    technologies: ["Language Teaching", "French", "ASL", "English"],
-  },
 ];
 
 const Experiences = () => {
@@ -110,7 +101,10 @@ const Experiences = () => {
           )
         )}
       </div>
-      <Link className="p-1.5 m-2 text-md font-light" href="/assets/resume.pdf">
+      <Link
+        className="font-semibold lg:group-hover/link:text-teal-700 hover:text-teal-700 dark:lg:group-hover/link:text-teal-400 dark:hover:text-teal-400 transition-color duration-500"
+        href="/assets/resume.pdf"
+      >
         View full resume
       </Link>
     </div>

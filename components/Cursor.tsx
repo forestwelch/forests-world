@@ -24,7 +24,7 @@ const Cursor: React.FC = () => {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 min-h-screen z-30 transition duration-300 lg:absolute"
+      className="pointer-events-none fixed inset-0 min-h-screen z-30 transition duration-500 lg:absolute"
       style={{
         background: `radial-gradient(600px at ${x}px ${y}px, rgba(0, 0, 0, 0.2), transparent 80%)`,
       }}

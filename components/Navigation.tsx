@@ -37,12 +37,6 @@ const Navigation = () => {
           <Link className="p-1.5 m-2 text-md font-light" href="/contact">
             Contact
           </Link>
-          <Link
-            className="p-1.5 m-2 text-md font-light"
-            href="/assets/resume.pdf"
-          >
-            Resume
-          </Link>
           <LanguageToggle />
           <ThemeToggle />
         </div>

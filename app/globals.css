@@ -73,32 +73,6 @@ body {
   @apply text-gray-300;
 }
 
-a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 1s ease-out;
-}
-
-a:hover::before {
-  width: 100%;
-}
-
-a.contact::before {
-  width: 0 !important;
-}
-
-a {
-  @apply relative text-gray-800;
-  cursor: pointer;
-  transition: color 1s ease-in-out;
-}
-
 .dark a {
   @apply text-gray-300;
 }

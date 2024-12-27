@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Navigation from "@/components/Navigation";
 import ClientTheme from "@/components/ClientTheme";
 import Providers from "@/components/Providers";
 
@@ -19,7 +18,6 @@ export default function RootLayout({
       <Providers>
         <ClientTheme>
           <div className="background" />
-          {/* <Navigation /> */}
           <main className="fade-in min-h-screen">{children}</main>
         </ClientTheme>
       </Providers>

@@ -33,7 +33,7 @@ const Project = ({
     >
       <Image
         loading="lazy"
-        className="object-contain"
+        className="object-contain self-start rounded-lg"
         src={image}
         alt={description}
         width={150}

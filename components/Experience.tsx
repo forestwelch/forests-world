@@ -31,7 +31,7 @@ const Experience = ({
       onClick={handleClick}
     >
       <div className="flex-shrink-0 w-32">
-        <span className="text-sm capitalize">{dates}</span>
+        <span className="text-sm capitalize font-semibold">{dates}</span>
       </div>
       <div className="flex flex-col gap-y-2">
         <Link

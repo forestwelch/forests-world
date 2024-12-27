@@ -1,22 +1,12 @@
 "use client";
 
 import React from "react";
-import { useTranslation } from "react-i18next";
 import Experience from "@/components/Experience";
 import Link from "next/link";
 
 const experiences = [
   {
-    role: "Consultant, Software Engineer",
-    company: "Self-Employed",
-    companyLink: "https://forestsworld.me",
-    dates: "2024 - Present",
-    description:
-      "Delivered SEO and UX optimization services to Bullseye Collectibles, increasing website traffic by 100%. Built various tools including an esports bracket manager and real-time text editor.",
-    technologies: ["Next.js", "TypeScript", "MongoDB", "Clerk", "Liveblocks"],
-  },
-  {
-    role: "Software Engineer (Contract)",
+    role: "Software Engineer",
     company: "BuildVision",
     companyLink: "https://www.buildvision.io/",
     dates: "2023 - 2024",
@@ -32,16 +22,7 @@ const experiences = [
     ],
   },
   {
-    role: "Freelance Educator & Organizer",
-    company: "Self-Employed",
-    companyLink: "https://forestsworld.me",
-    dates: "2022 - 2023",
-    description:
-      "Taught over 1000 personalized lessons in French, ASL, and English. Traveled Asia for a year while gaining mindfulness and coaching skills.",
-    technologies: ["React", "JavaScript", "TypeScript", "Node.js"],
-  },
-  {
-    role: "Software Engineer",
+    role: "Senior Software Engineer I",
     company: "Autodesk",
     companyLink: "https://www.autodesk.com/",
     dates: "2020 - 2022",
@@ -60,7 +41,7 @@ const experiences = [
     ],
   },
   {
-    role: "Software Engineer (Contract)",
+    role: "Software Engineer II",
     company: "BuildingConnected",
     companyLink: "https://www.buildingconnected.com/",
     dates: "2018 - 2020",
@@ -109,8 +90,6 @@ const experiences = [
 ];
 
 const Experiences = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="flex flex-col gap-y-8">
       <div className="flex flex-wrap justify-center gap-8 group">

@@ -82,7 +82,10 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div className="flex flex-col gap-y-8">
+    <section>
+      <h2 className="lg:hidden text-lg tracking-tight font-semibold">
+        Experiences
+      </h2>
       <div className="flex flex-wrap justify-center gap-12 group">
         {experiences.map(
           (
@@ -102,7 +105,7 @@ const Experiences = () => {
         )}
       </div>
       <ArrowLink href="/assets/resume.pdf" text="View full resume" />
-    </div>
+    </section>
   );
 };
 

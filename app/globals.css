@@ -116,14 +116,12 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder,
-.icon {
+textarea::placeholder {
   @apply text-gray-800;
 }
 
 .dark input::placeholder,
-.dark textarea::placeholder,
-.dark .icon {
+.dark textarea::placeholder {
   @apply text-gray-300;
 }
 

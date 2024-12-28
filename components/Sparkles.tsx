@@ -1,7 +1,5 @@
 import React from "react";
 
-const DEFAULT_COLOR = "hsl(50deg, 100%, 80%)";
-
 // Utility helper for random number generation
 const random = (min: number = 50, max: number = 500) =>
   Math.floor(Math.random() * (max - min)) + min;
@@ -47,7 +45,7 @@ const useRandomInterval = (
 //   return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 // };
 
-const generateSparkle = (color = DEFAULT_COLOR) => {
+const generateSparkle = (color: string) => {
   return {
     id: String(random(10000, 99999)),
     createdAt: Date.now(),
@@ -101,10 +99,10 @@ const Sparkle = ({
 
 function Sparkles({
   children,
-  color,
+  color = "hsl(50deg, 100%, 80%)",
 }: {
   children: React.ReactNode;
-  color: string;
+  color?: string;
 }) {
   const [sparkles, setSparkles] = React.useState<SparkleType[]>([]);
 

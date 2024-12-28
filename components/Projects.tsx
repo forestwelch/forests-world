@@ -92,28 +92,33 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-wrap justify-center gap-12 group">
-      {projects.map(
-        ({
-          image,
-          descriptionKey,
-          liveLink,
-          githubLink,
-          name,
-          technologies,
-        }) => (
-          <Project
-            key={descriptionKey}
-            image={image}
-            description={t(descriptionKey)}
-            liveLink={liveLink}
-            githubLink={githubLink}
-            name={name}
-            technologies={technologies}
-          />
-        )
-      )}
-    </div>
+    <section className="">
+      <h2 className="lg:hidden text-lg tracking-tight font-semibold">
+        Projects
+      </h2>
+      <div className="flex flex-wrap justify-center gap-12 group">
+        {projects.map(
+          ({
+            image,
+            descriptionKey,
+            liveLink,
+            githubLink,
+            name,
+            technologies,
+          }) => (
+            <Project
+              key={descriptionKey}
+              image={image}
+              description={t(descriptionKey)}
+              liveLink={liveLink}
+              githubLink={githubLink}
+              name={name}
+              technologies={technologies}
+            />
+          )
+        )}
+      </div>
+    </section>
   );
 };
 

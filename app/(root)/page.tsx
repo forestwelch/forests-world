@@ -50,7 +50,6 @@ const Home = () => {
             <LanguageToggle />
             <ThemeToggle />
           </div> */}
-          <StepTransition />
         </section>
         <nav aria-label="Social links" className="flex flex-row gap-x-4">
           <Link href="https://www.github.com/nwelchr/" aria-label="GitHub">
@@ -63,7 +62,7 @@ const Home = () => {
             <LinkedinIcon />
           </Link>
           <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
-            <InboxIcon className="h-10 w-10 text-gray-400 hover:text-blue-500 icon" />
+            <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-500" />
           </Link>
         </nav>
       </header>
@@ -102,14 +101,19 @@ const Home = () => {
             When I’m not coding, I’m likely practicing yoga, meditating in
             nature,{" "}
           </span>
-          <Sparkles>
-            <button
+          <Sparkles
+            color={
+              theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"
+            }
+          >
+            <Link
               className="font-bold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
-              onClick={incrementStep}
+              href="/tarot"
             >
               doing tarot readings
-            </button>
+            </Link>
           </Sparkles>
+
           <span>
             , tinkering with retro consoles, or playing Kingdom Hearts.
           </span>

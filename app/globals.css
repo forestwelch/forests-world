@@ -130,11 +130,3 @@ textarea::placeholder,
 h1 {
   @apply text-6xl font-thin text-center md:text-8xl;
 }
-
-.badge {
-  @apply text-gray-800 bg-gray-300;
-}
-
-.dark .badge {
-  @apply text-gray-300 bg-gray-800;
-}

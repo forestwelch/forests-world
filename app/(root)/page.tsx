@@ -6,8 +6,6 @@ import StepTransition from "@/components/StepTransition";
 import { useStep } from "@/components/StepContext";
 import Experiences from "@/components/Experiences";
 import Link from "next/link";
-import LanguageToggle from "@/components/LanguageToggle";
-import ThemeToggle from "@/components/ThemeToggle";
 import LinkedinIcon from "@/components/LinkedinIcon";
 import GithubIcon from "@/components/GithubIcon";
 import { InboxIcon } from "@heroicons/react/16/solid";
@@ -118,13 +116,13 @@ const Home = () => {
         </section>
         <Experiences />
         <Projects />
-        <footer>
+        <footer className="text-center pt-12">
           <p>
             You&apos;ve been viewing this site in{" "}
-            <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+            <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 transition duration-500">
               <Sparkles
                 color={
-                  theme === "dark" ? "hsl(252, 56%, 26%)" : "hsl(170, 53%, 62%)"
+                  theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"
                 }
               >
                 {theme}
@@ -133,12 +131,18 @@ const Home = () => {
             mode.
           </p>
           <button
-            className="font-bold hover:text-violet-800 dark:hover:text-teal-200"
+            className="font-bold hover:text-teal-700 dark:hover:text-violet-300 transition-color duration-500"
             onClick={toggleTheme}
           >
             Click here to change to{" "}
-            <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800">
-              {theme === "dark" ? "light" : "dark"}
+            <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 transition duration-500">
+              <Sparkles
+                color={
+                  theme === "dark" ? "hsl(252, 56%, 26%)" : "hsl(252, 62%, 70%)"
+                }
+              >
+                {theme === "dark" ? "light" : "dark"}
+              </Sparkles>
             </span>{" "}
             mode.
           </button>

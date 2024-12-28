@@ -9,7 +9,7 @@ const projects = [
     image: "/assets/images/visio.webp",
     name: "Visio",
     descriptionKey: "Visio",
-    liveLink: "https://visio-virid-phi.vercel.app/",
+    liveLink: "https://visio.forestsworld.me/",
     githubLink: "https://github.com/nwelchr/visio",
     technologies: [
       "Next.js",
@@ -28,7 +28,7 @@ const projects = [
     image: "/assets/images/livedocs.webp",
     name: "LiveDocs App",
     descriptionKey: "LiveDocs",
-    liveLink: "https://realtime-docs-theta.vercel.app/",
+    liveLink: "https://livedocs.forestsworld.me/",
     githubLink: "https://github.com/nwelchr/realtime-docs",
     technologies: [
       "Next.js",
@@ -44,7 +44,7 @@ const projects = [
     image: "/assets/images/bop.webp",
     name: "Spotify Clone - Bop",
     descriptionKey: "Bop",
-    liveLink: "https://bop-aa-b461179cab20.herokuapp.com/#/",
+    liveLink: "https://bop.forestsworld.me",
     githubLink: "https://github.com/nwelchr/bop",
     technologies: [
       "React",
@@ -59,7 +59,7 @@ const projects = [
     image: "/assets/images/power-of-friendship.webp",
     name: "The Power of Friendship",
     descriptionKey: "ThePowerOfFriendship",
-    liveLink: "https://nwelchr.github.io/The-Power-of-Friendship/",
+    liveLink: "https://friendship.forestsworld.me/",
     githubLink: "https://github.com/nwelchr/The-Power-of-Friendship",
     technologies: ["HTML", "CSS", "JavaScript"],
   },

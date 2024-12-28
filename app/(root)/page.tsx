@@ -24,7 +24,7 @@ const Home = () => {
             <div>
               <h1
                 id="site-title"
-                className="text-5xl font-light tracking-tight text-left"
+                className="text-5xl font-semibold tracking-tight text-left"
               >
                 Forest Welch
               </h1>

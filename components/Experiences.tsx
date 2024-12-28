@@ -4,6 +4,7 @@ import React from "react";
 import Experience from "@/components/Experience";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
+import ArrowLink from "./ArrowLink";
 
 const experiences = [
   {
@@ -102,13 +103,7 @@ const Experiences = () => {
           )
         )}
       </div>
-      <Link
-        className="group/icon flex font-semibold lg:group-hover/link:text-teal-700 hover:text-teal-700 dark:lg:group-hover/link:text-teal-400 dark:hover:text-teal-400 transition-color duration-300"
-        href="/assets/resume.pdf"
-      >
-        View full resume
-        <ArrowUpRightIcon className="w-4 h-4 transform transition duration-150 group-hover/icon:translate-x-[2px] group-hover/icon:-translate-y-[2px]" />
-      </Link>
+      <ArrowLink href="/assets/resume.pdf" text="View full resume" />
     </div>
   );
 };

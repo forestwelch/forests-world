@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Badge from "./ui/badge";
+import ArrowLink from "./ArrowLink";
 
 const Project = ({
   description,
@@ -16,7 +17,7 @@ const Project = ({
   description: string;
   name: string;
   image: string;
-  liveLink: URL;
+  liveLink: string;
   githubLink?: URL;
   technologies: string[];
 }) => {
@@ -33,7 +34,7 @@ const Project = ({
     >
       <Image
         loading="lazy"
-        className="object-contain self-start rounded-lg"
+        className="object-contain self-start rounded-lg max-sm:hidden"
         src={image}
         alt={description}
         width={150}
@@ -41,14 +42,7 @@ const Project = ({
         layout="intrinsic"
       />
       <div className="flex flex-col gap-y-2">
-        <Link
-          className="font-medium lg:group-hover/link:text-violet-600 hover:text-violet-600 dark:lg:group-hover/link:text-teal-400 dark:hover:text-teal-400 transition-color duration-500"
-          href={liveLink.toString()}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {name}
-        </Link>
+        <ArrowLink href={liveLink} text={name} hoverColor="violet" />
         <p className="text-base font-light">{description}</p>
         <ul className="gap-2 flex flex-wrap">
           {technologies.map((tech, idx) => (

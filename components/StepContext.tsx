@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useMemo, useState } from "react";
+import Introduction from "./steps/Introduction";
 import LoadingText from "./steps/LoadingText";
 import CardReveal from "./steps/CardReveal";
 
@@ -19,10 +20,12 @@ const StepProvider = ({ children }: { children: React.ReactNode }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
 
-  console.log({ currentStep }, "StepProvider");
-
   const steps = useMemo(
-    () => [<></>, <LoadingText key="step-2" />, <CardReveal key="step-3" />],
+    () => [
+      <Introduction key="step-1" />,
+      <LoadingText key="step-2" />,
+      <CardReveal key="step-3" />,
+    ],
     []
   );
 
@@ -30,7 +33,6 @@ const StepProvider = ({ children }: { children: React.ReactNode }) => {
     setFadeOut(true);
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setCurrentStep((prev) => {
-      console.log({ prev });
       return (prev + 1) % steps.length;
     });
     setFadeOut(false);

@@ -11,7 +11,6 @@ const dmSans = DM_Sans({
 
 const ClientTheme = ({ children }: { children: React.ReactNode }) => {
   const { theme } = useTheme();
-  console.log({ theme });
   return (
     <body className={`${theme} ${dmSans.variable} antialiased smooth-scroll`}>
       {children}

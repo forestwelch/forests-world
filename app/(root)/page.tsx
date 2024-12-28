@@ -63,7 +63,7 @@ const Home = () => {
           </Link>
         </nav>
       </header>
-      <main className="flex flex-col lg:flex-1 gap-y-8 lg:py-24">
+      <main className="flex flex-col lg:flex-1 gap-y-12 lg:py-24">
         <section>
           <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 py-1 border-b-2 border-violet-500/50 dark:border-teal-300/50">
             About Me
@@ -89,9 +89,26 @@ const Home = () => {
             <br />
             Throughout my career, I’ve had the chance to work across a range of
             environments—from{" "}
-            <a href="https://www.autodesk.com/">large corporations</a> to{" "}
-            <a href="https://www.buildingconnected.com/">growing startups</a>{" "}
-            and <a href="https://www.buildvision.io/">pre-seed projects</a>
+            <Link
+              className="text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
+              href="https://www.autodesk.com/"
+            >
+              large corporations
+            </Link>{" "}
+            to{" "}
+            <Link
+              className="text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
+              href="https://www.buildingconnected.com/"
+            >
+              growing startups
+            </Link>{" "}
+            and{" "}
+            <Link
+              className="text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
+              href="https://www.buildvision.io/"
+            >
+              pre-seed projects
+            </Link>
             —helping them scale with thoughtful, impactful solutions.
             <br />
             <br />
@@ -104,7 +121,7 @@ const Home = () => {
             }
           >
             <Link
-              className="font-bold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
+              className="text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
               href="/tarot"
             >
               doing tarot readings
@@ -117,10 +134,10 @@ const Home = () => {
         </section>
         <Experiences />
         <Projects />
-        <footer className="text-center pt-12">
+        <footer className="text-center flex flex-col gap-y-2">
           <p>
             You&apos;ve been viewing this site in{" "}
-            <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 transition duration-500">
+            <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 transition duration-500 inline-block w-12 text-center">
               <Sparkles
                 color={
                   theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"
@@ -136,7 +153,7 @@ const Home = () => {
             onClick={toggleTheme}
           >
             Click here to change to{" "}
-            <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 transition duration-500">
+            <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 transition duration-500 inline-block w-12 text-center">
               <Sparkles
                 color={
                   theme === "dark" ? "hsl(252, 56%, 26%)" : "hsl(252, 62%, 70%)"

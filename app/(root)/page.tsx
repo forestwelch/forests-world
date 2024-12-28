@@ -2,8 +2,6 @@
 
 import React from "react";
 import Projects from "@/components/Projects";
-import StepTransition from "@/components/StepTransition";
-import { useStep } from "@/components/StepContext";
 import Experiences from "@/components/Experiences";
 import Link from "next/link";
 import LinkedinIcon from "@/components/LinkedinIcon";
@@ -14,7 +12,6 @@ import Sparkles from "@/components/Sparkles";
 import { useTheme } from "@/theme/ThemeProvider";
 
 const Home = () => {
-  const { incrementStep } = useStep();
   const { theme, toggleTheme } = useTheme();
 
   return (

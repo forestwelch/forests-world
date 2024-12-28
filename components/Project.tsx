@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import Badge from "./ui/badge";
 import ArrowLink from "./ArrowLink";
 
@@ -11,14 +10,12 @@ const Project = ({
   name,
   image,
   liveLink,
-  githubLink,
   technologies,
 }: {
   description: string;
   name: string;
   image: string;
   liveLink: string;
-  githubLink?: URL;
   technologies: string[];
 }) => {
   const handleClick = () => {
@@ -42,7 +39,7 @@ const Project = ({
         layout="intrinsic"
       />
       <div className="flex flex-col gap-y-2">
-        <ArrowLink href={liveLink} text={name} hoverColor="violet" />
+        <ArrowLink href={liveLink} text={name} />
         <p className="text-base font-light">{description}</p>
         <ul className="gap-2 flex flex-wrap">
           {technologies.map((tech, idx) => (

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import tarotCards from "@/public/assets/tarot/cards.json";
-import Link from "next/link";
 
 const CardReveal = () => {
   const card = tarotCards[Math.floor(Math.random() * tarotCards.length)];

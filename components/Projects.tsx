@@ -98,20 +98,12 @@ const Projects = () => {
       </h3>
       <div className="flex flex-wrap justify-center gap-12 group">
         {projects.map(
-          ({
-            image,
-            descriptionKey,
-            liveLink,
-            githubLink,
-            name,
-            technologies,
-          }) => (
+          ({ image, descriptionKey, liveLink, name, technologies }) => (
             <Project
               key={descriptionKey}
               image={image}
               description={t(descriptionKey)}
               liveLink={liveLink}
-              githubLink={githubLink}
               name={name}
               technologies={technologies}
             />

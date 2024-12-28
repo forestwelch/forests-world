@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ClientTheme from "@/components/ClientTheme";
 import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
@@ -15,12 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <Providers>
-        <ClientTheme>
+      <body>
+        <Providers>
           <div className="background" />
           <main className="fade-in min-h-screen">{children}</main>
-        </ClientTheme>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }

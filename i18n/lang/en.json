@@ -7,11 +7,11 @@
   "WelcomeShort": "Welcome.",
   "Resume": "Resume",
   "Blurb": "From a young age, my fascination with language—spoken, signed, and coded—has been unwavering: language is our most powerful bridge to understanding and connection. As a developer, I channel this passion to craft tools that amplify users' potential.",
-  "Bop": "A music-streaming app that allows users to make and shuffle playlists, and follow their friends' favorite artists.",
-  "ThePowerOfFriendship": "A minimalist puzzle platformer where a blocky, motley crew must work together to succeed.",
-  "ProjectPhantom": "A React VR component library, an npx build script for easy project setup, and a VR previewer for instant website demos.",
+  "Bop": "Spotify-inspired app for music streaming. Users can create and share playlists, follow artists, loop or shuffle songs, and search for music in real-time.",
+  "ThePowerOfFriendship": "Minimalist puzzle platformer inspired by Thomas Was Alone. Features custom physics tailored to each character and fluid camera transitions for seamless gameplay.",
+  "ProjectPhantom": "React VR component library with an npx build script for quick project setup and a VR previewer for instant website demos.",
   "Synergia": "An international LGBT human rights organization dedicated to empowering local social movements.",
-  "Verbling": "A simple note-taking app. Built with create-react-app and React context API.",
-  "LiveDocs": "A collaborative text editor with realtime editing, commenting, and sharing.",
-  "Visio": "Create and share imaginative images with DALL-E AI. Explore a community of AI-generated creations."
+  "Verbling": "A simple note-taking app with basic CRUD actions. Built with create-react-app and React context API.",
+  "LiveDocs": "Collaborative text editor inspired by Google Docs. Supports millions of users editing documents in real time, with features like rich-text formatting, commenting, and sharing.",
+  "Visio": "AI-powered platform that integrates OpenAI’s DALL-E API to generate and share images. Features a community board for AI-generated creations."
 }

@@ -99,13 +99,19 @@ const Sparkle = ({
   );
 };
 
-function Sparkles({ children }: { children: React.ReactNode }) {
+function Sparkles({
+  children,
+  color,
+}: {
+  children: React.ReactNode;
+  color: string;
+}) {
   const [sparkles, setSparkles] = React.useState<SparkleType[]>([]);
 
   useRandomInterval(
     () => {
       const now = Date.now();
-      const sparkle = generateSparkle();
+      const sparkle = generateSparkle(color);
       const nextSparkles = sparkles.filter(
         (sparkle) => now - sparkle.createdAt < 1000
       );

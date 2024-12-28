@@ -13,9 +13,11 @@ import GithubIcon from "@/components/GithubIcon";
 import { InboxIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Sparkles from "@/components/Sparkles";
+import { useTheme } from "@/theme/ThemeProvider";
 
 const Home = () => {
   const { incrementStep } = useStep();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-screen-xl mx-auto lg:py-0 p-8 sm:p-12">
@@ -46,10 +48,10 @@ const Home = () => {
             I build user-friendly apps to make the digital
             <br /> world more intuitive and beautiful.
           </p>
-          <div className="flex gap-8 lg:mb-4" aria-label="Site controls">
+          {/* <div className="flex gap-8 lg:mb-4" aria-label="Site controls">
             <LanguageToggle />
             <ThemeToggle />
-          </div>
+          </div> */}
           <StepTransition />
         </section>
         <nav aria-label="Social links" className="flex flex-row gap-x-4">
@@ -116,6 +118,31 @@ const Home = () => {
         </section>
         <Experiences />
         <Projects />
+        <footer>
+          <p>
+            You&apos;ve been viewing this site in{" "}
+            <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+              <Sparkles
+                color={
+                  theme === "dark" ? "hsl(252, 56%, 26%)" : "hsl(170, 53%, 62%)"
+                }
+              >
+                {theme}
+              </Sparkles>
+            </span>{" "}
+            mode.
+          </p>
+          <button
+            className="font-bold hover:text-violet-800 dark:hover:text-teal-200"
+            onClick={toggleTheme}
+          >
+            Click here to change to{" "}
+            <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800">
+              {theme === "dark" ? "light" : "dark"}
+            </span>{" "}
+            mode.
+          </button>
+        </footer>
       </main>
     </div>
   );

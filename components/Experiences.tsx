@@ -2,8 +2,6 @@
 
 import React from "react";
 import Experience from "@/components/Experience";
-import Link from "next/link";
-import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import ArrowLink from "./ArrowLink";
 
 const experiences = [

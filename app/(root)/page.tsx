@@ -12,6 +12,7 @@ import LinkedinIcon from "@/components/LinkedinIcon";
 import GithubIcon from "@/components/GithubIcon";
 import { InboxIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import Sparkles from "@/components/Sparkles";
 
 const Home = () => {
   const { incrementStep } = useStep();
@@ -71,7 +72,7 @@ const Home = () => {
           <h2 className="lg:hidden text-lg tracking-tight font-semibold">
             About Me
           </h2>
-          <p>
+          <span>
             From a young age, my fascination with language—spoken, signed, and
             coded—has been unwavering: language is our most powerful bridge to
             understanding and connection. As a developer, I channel this passion
@@ -100,9 +101,18 @@ const Home = () => {
             <br />
             When I’m not coding, I’m likely practicing yoga, meditating in
             nature,{" "}
-            <button onClick={incrementStep}>doing tarot readings</button>,
-            tinkering with retro consoles, or playing Kingdom Hearts.
-          </p>
+          </span>
+          <Sparkles>
+            <button
+              className="font-bold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-500"
+              onClick={incrementStep}
+            >
+              doing tarot readings
+            </button>
+          </Sparkles>
+          <span>
+            , tinkering with retro consoles, or playing Kingdom Hearts.
+          </span>
         </section>
         <Experiences />
         <Projects />

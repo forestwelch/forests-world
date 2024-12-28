@@ -50,18 +50,6 @@ const Project = ({
           ))}
         </ul>
       </div>
-      {/* {githubLink && (
-        <li>
-          <Link
-            className="font-medium text-lg p-2"
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </Link>
-        </li>
-      )} */}
     </div>
   );
 };

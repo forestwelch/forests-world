@@ -50,7 +50,7 @@ const generateSparkle = (color: string) => {
     id: String(random(10000, 99999)),
     createdAt: Date.now(),
     color,
-    size: random(5, 10),
+    size: random(5, 15),
     style: {
       top: random(0, 80) + "%",
       left: random(0, 100) + "%",
@@ -121,7 +121,7 @@ function Sparkles({
   );
 
   return (
-    <div className="relative inline-block">
+    <span className="relative inline-block">
       {sparkles.map((sparkle) => (
         <Sparkle
           key={sparkle.id}
@@ -130,8 +130,8 @@ function Sparkles({
           style={sparkle.style}
         />
       ))}
-      <div className="relative z-10">{children}</div>
-    </div>
+      <span className="relative z-10">{children}</span>
+    </span>
   );
 }
 

@@ -11,9 +11,14 @@ const ArrowLink = ({
   text: string;
   hoverColor?: string;
 }) => {
+  const hoverClass =
+    hoverColor === "teal"
+      ? "lg:group-hover/link:text-teal-700 dark:lg:group-hover/link:text-teal-400 hover:text-teal-700 dark:hover:text-teal-400"
+      : "lg:group-hover/link:text-violet-700 dark:lg:group-hover/link:text-violet-400 hover:text-violet-700 dark:hover:text-violet-400";
+
   return (
     <Link
-      className={`group/icon font-semibold lg:group-hover/link:text-${hoverColor}-700 dark:lg:group-hover/link:text-${hoverColor}-400 hover:text-${hoverColor}-700 dark:hover:text-${hoverColor}-400 transition-colors duration-300`}
+      className={`group/icon font-semibold ${hoverClass} transition-colors duration-300`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"

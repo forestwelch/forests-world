@@ -51,7 +51,7 @@ const Home = () => {
             <ThemeToggle />
           </div> */}
         </section>
-        <nav aria-label="Social links" className="flex flex-row gap-x-4">
+        <nav aria-label="Social links" className="flex flex-row gap-x-4 mt-8">
           <Link href="https://www.github.com/nwelchr/" aria-label="GitHub">
             <GithubIcon />
           </Link>
@@ -68,9 +68,9 @@ const Home = () => {
       </header>
       <main className="flex flex-col lg:flex-1 gap-y-8 lg:py-24">
         <section>
-          <h2 className="lg:hidden text-lg tracking-tight font-semibold">
+          <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 py-1 border-b-2 border-violet-500/50 dark:border-teal-300/50">
             About Me
-          </h2>
+          </h3>
           <span>
             From a young age, my fascination with language—spoken, signed, and
             coded—has been unwavering: language is our most powerful bridge to

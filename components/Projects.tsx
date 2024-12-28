@@ -93,9 +93,9 @@ const Projects = () => {
 
   return (
     <section className="">
-      <h2 className="lg:hidden text-lg tracking-tight font-semibold">
+      <h3 className="lg:hidden text-xl tracking-tight font-semibold mt-8 mb-2 bg-violet-700/10 dark:bg-teal-300/10 p-2">
         Projects
-      </h2>
+      </h3>
       <div className="flex flex-wrap justify-center gap-12 group">
         {projects.map(
           ({

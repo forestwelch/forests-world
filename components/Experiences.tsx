@@ -83,9 +83,9 @@ const experiences = [
 const Experiences = () => {
   return (
     <section>
-      <h2 className="lg:hidden text-lg tracking-tight font-semibold">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-2 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         Experiences
-      </h2>
+      </h3>
       <div className="flex flex-wrap justify-center gap-12 group">
         {experiences.map(
           (

@@ -11,7 +11,7 @@ const About = () => {
       <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         About Me
       </h3>
-      <span>
+      <p className="lg:p-0 sm:p-2">
         From a young age, my fascination with language—spoken, signed, and
         coded—has been unwavering: language is our most powerful bridge to
         understanding and connection. As a developer, I channel this passion to
@@ -56,19 +56,15 @@ const About = () => {
         <br />
         <br />
         When I’m not coding, I’m likely practicing yoga, meditating in nature,{" "}
-      </span>
-      <Sparkles
-        color={theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"}
-      >
-        <Link
-          className="text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
-          href="/tarot"
+        <Sparkles
+          color={theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"}
         >
-          doing tarot readings
-        </Link>
-      </Sparkles>
-
-      <span>, tinkering with retro consoles, or playing Kingdom Hearts.</span>
+          <button className="cursor-default text-gray-900 dark:text-gray-50 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out">
+            doing tarot readings
+          </button>
+        </Sparkles>
+        , tinkering with retro consoles, or playing Kingdom Hearts.
+      </p>
     </section>
   );
 };

@@ -7,7 +7,7 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header className="flex flex-col justify-between lg:sticky lg:top-0 lg:py-24 max-h-screen lg:flex-1">
+    <header className="flex flex-col justify-between lg:sticky lg:top-0 lg:py-24 max-h-screen lg:w-[45%]">
       <div aria-labelledby="site-title">
         <div className="flex items-center gap-4">
           <div>

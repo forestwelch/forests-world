@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html className="scroll-smooth">
       <body>
         <Providers>
           <div className="background" />

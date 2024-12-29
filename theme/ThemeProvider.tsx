@@ -26,12 +26,12 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") || "dark";
     setTheme(storedTheme);
-    document.body.className = `${storedTheme} ${dmSans.variable} antialiased smooth-scroll`;
+    document.body.className = `${storedTheme} ${dmSans.variable} antialiased`;
   }, []);
 
   useEffect(() => {
     if (theme) {
-      document.body.className = `${theme} ${dmSans.variable} antialiased smooth-scroll`;
+      document.body.className = `${theme} ${dmSans.variable} antialiased`;
     }
   }, [theme]);
 

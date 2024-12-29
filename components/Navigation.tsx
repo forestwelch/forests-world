@@ -1,81 +1,62 @@
-"use client";
-
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
-import LanguageToggle from "./LanguageToggle";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "about";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute("id")!;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="w-full text-gray-400 bg-black bg-opacity-20 sm:w-full">
-      <div className="px-8 py-2 flex items-center justify-between">
-        <Image
-          src="/assets/images/logo.webp"
-          alt="logo"
-          width={48}
-          height={48}
-        />
-
-        {/* Hamburger Menu */}
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden flex flex-col items-center space-y-1"
-        >
-          <Bars3Icon className="h-8 w-8 icon" />
-        </button>
-
-        {/* Navigation Links */}
-        <div className="items-center space-x-8 hidden lg:flex">
-          <Link className="p-1.5 m-2 text-md font-light" href="/contact">
-            Contact
-          </Link>
-          <LanguageToggle />
-          <ThemeToggle />
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden ${
-          isMenuOpen ? "block" : "hidden"
-        } bg-black bg-opacity-80 absolute inset-0 z-10 flex flex-col items-center justify-center overflow-visible`}
-      >
-        {/* Close Button */}
-        <button
-          onClick={toggleMenu}
-          className="absolute top-4 right-4 text-gray-400"
-        >
-          <XMarkIcon className="h-8 w-8" />
-        </button>
-
-        <Link
-          className="p-4 text-xl font-light text-gray-300"
-          href="/contact"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Contact
-        </Link>
-        <Link
-          className="p-4 text-xl font-light text-gray-300"
-          href="/assets/resume.pdf"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Resume
-        </Link>
-        <div className="mt-4">
-          <LanguageToggle />
-          <ThemeToggle />
-        </div>
-      </div>
-    </div>
+    <ul className="max-lg:hidden mt-16 w-max">
+      {[
+        { href: "#about", id: "about", label: "About" },
+        { href: "#experiences", id: "experiences", label: "Experiences" },
+        { href: "#projects", id: "projects", label: "Projects" },
+      ].map((item) => (
+        <li key={item.id}>
+          <a
+            href={item.href}
+            className={`group flex items-center py-4 ${
+              activeSection === item.id && "opacity-100"
+            }`}
+          >
+            <span
+              className={`mr-4 h-[1px] transition-all duration-150 ease-in-out bg-gray-800 dark:bg-gray-200 ${
+                activeSection === item.id
+                  ? "w-16 opacity-100"
+                  : "w-8 opacity-50 group-hover:w-16 group-hover:opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`text-xs font-bold uppercase tracking-widest transition-all duration-150 ease-in-out text-gray-800 dark:text-gray-200 ${
+                activeSection === item.id
+                  ? "opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
+              }`}
+            >
+              {item.label}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

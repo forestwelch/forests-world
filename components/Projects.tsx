@@ -92,7 +92,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="">
+    <section className="lg:pt-24" id="projects">
       <h3 className="lg:hidden text-xl tracking-tight font-semibold mb-2 bg-violet-700/10 dark:bg-teal-300/10 p-2">
         Projects
       </h3>

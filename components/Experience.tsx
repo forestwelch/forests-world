@@ -27,7 +27,7 @@ const Experience = ({
 
   return (
     <div
-      className="group/link gap-4 max-sm:p-4 lg:group-hover:opacity-50 bg-transparent rounded-xl flex flex-row max-sm:flex-col transition-opacity transition-bg duration-500 lg:hover:bg-black/10 lg:hover:!opacity-100 lg:opacity-75 lg:cursor-pointer"
+      className="group/link gap-4 sm:p-4 lg:group-hover:opacity-50 bg-transparent rounded-xl flex flex-row max-sm:flex-col transition-opacity transition-bg duration-150 ease-in-out lg:hover:bg-black/10 lg:hover:!opacity-100 lg:opacity-75 lg:cursor-pointer"
       onClick={handleClick}
     >
       <div className="flex-shrink-0 w-32">

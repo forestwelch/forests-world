@@ -20,7 +20,7 @@ const Header = () => {
             <h2 className="text-xl font-medium">Fullstack Software Engineer</h2>
           </div>
           <Image
-            className="max-w-28 max-h-28 object-cover opacity-80 max-md:hidden"
+            className="max-w-24 max-h-24 object-cover opacity-80 max-lg:hidden"
             src="/assets/images/logo.webp"
             alt="Self"
             width={300}
@@ -46,7 +46,7 @@ const Header = () => {
           <LinkedinIcon />
         </Link>
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
-          <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-500" />
+          <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
       </nav>
     </header>

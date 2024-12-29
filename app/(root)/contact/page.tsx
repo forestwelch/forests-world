@@ -100,7 +100,7 @@ const ContactPage = () => {
           />
           <button
             type="submit"
-            className="w-32 self-end mt-4 p-2 text-xl font-light transition:bg duration-500 rounded-xl border-dotted border button"
+            className="w-32 self-end mt-4 p-2 text-xl font-light transition:bg duration-150 ease-in-out rounded-xl border-dotted border button"
           >
             Send
           </button>

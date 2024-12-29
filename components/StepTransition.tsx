@@ -8,7 +8,7 @@ const StepTransition = () => {
 
   return (
     <div
-      className={`pr-8 py-8 flex flex-col transition-opacity duration-500 ${
+      className={`pr-8 py-8 flex flex-col transition-opacity duration-150 ease-in-out ${
         fadeOut ? "opacity-0" : "opacity-100"
       }`}
     >

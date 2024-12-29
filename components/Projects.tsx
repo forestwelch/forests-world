@@ -93,7 +93,7 @@ const Projects = () => {
 
   return (
     <section className="lg:pt-24" id="projects">
-      <h3 className="lg:hidden text-xl tracking-tight font-semibold mb-2 bg-violet-700/10 dark:bg-teal-300/10 p-2">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         Projects
       </h3>
       <div className="flex flex-wrap justify-center gap-12 group">

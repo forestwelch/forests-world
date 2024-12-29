@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="lg:pt-24" id="about">
-      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 py-1 border-b-2 border-violet-500/50 dark:border-teal-300/50">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         About Me
       </h3>
       <span>

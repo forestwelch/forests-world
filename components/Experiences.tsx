@@ -2,7 +2,6 @@
 
 import React from "react";
 import Experience from "@/components/Experience";
-import ArrowLink from "./ArrowLink";
 
 const experiences = [
   {

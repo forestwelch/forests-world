@@ -38,7 +38,7 @@ const Footer = () => {
         </button>
       </p>
 
-      <div className="max-w-md">
+      <div className="max-w-md max-lg:self-center max-lg:text-center">
         <span className="opacity-70 text-sm">
           My site’s design draws inspiration from the lovely{" "}
           <Link

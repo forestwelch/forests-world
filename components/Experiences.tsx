@@ -104,9 +104,6 @@ const Experiences = () => {
           )
         )}
       </div>
-      <p className="pt-8">
-        <ArrowLink href="/assets/resume.pdf" text="View full resume" />
-      </p>
     </section>
   );
 };

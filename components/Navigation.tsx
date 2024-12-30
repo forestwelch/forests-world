@@ -27,7 +27,11 @@ const Navigation = () => {
     <ul className="max-lg:hidden mt-16 w-max">
       {[
         { href: "#about", id: "about", label: "About" },
-        { href: "#experiences", id: "experiences", label: "Experiences" },
+        {
+          href: "#experiences",
+          id: "experiences",
+          label: "Work Experience",
+        },
         { href: "#projects", id: "projects", label: "Projects" },
       ].map((item) => (
         <li key={item.id}>

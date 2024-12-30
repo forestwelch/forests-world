@@ -4,11 +4,12 @@ import LinkedinIcon from "@/components/LinkedinIcon";
 import GithubIcon from "@/components/GithubIcon";
 import { InboxIcon } from "@heroicons/react/16/solid";
 import Navigation from "./Navigation";
+import ArrowLink from "./ArrowLink";
 
 const Header = () => {
   return (
     <header className="flex flex-col justify-between lg:sticky lg:top-0 lg:py-24 max-h-screen lg:w-[45%]">
-      <div aria-labelledby="site-title">
+      <div>
         <div className="flex items-center gap-4">
           <div>
             <h1
@@ -37,7 +38,11 @@ const Header = () => {
         <ThemeToggle />
       </div> */}
         <Navigation />
+        <p className="py-12 max-lg:hidden">
+          <ArrowLink href="/assets/resume.pdf" text="View resume" />
+        </p>
       </div>
+
       <nav aria-label="Social links" className="flex flex-row gap-x-4 mt-8">
         <Link href="https://www.github.com/nwelchr/" aria-label="GitHub">
           <GithubIcon />
@@ -48,6 +53,9 @@ const Header = () => {
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
           <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
+        <p className="self-center lg:hidden">
+          <ArrowLink href="/assets/resume.pdf" text="View full resume" />
+        </p>
       </nav>
     </header>
   );

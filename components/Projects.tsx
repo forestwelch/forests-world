@@ -42,7 +42,7 @@ const projects = [
   },
   {
     image: "/assets/images/bop.webp",
-    name: "Spotify Clone - Bop",
+    name: "Bop",
     descriptionKey: "Bop",
     liveLink: "https://bop.forestsworld.me",
     githubLink: "https://github.com/nwelchr/bop",
@@ -71,21 +71,21 @@ const projects = [
     githubLink: "https://github.com/PhantomVRTranslate/PhantomVR",
     technologies: ["React VR", "NPM"],
   },
-  {
-    image: "/assets/images/synergia.webp",
-    name: "Synergia",
-    descriptionKey: "Synergia",
-    liveLink: "https://synergiaihr.com/",
-    technologies: [],
-  },
-  {
-    image: "/assets/images/verbling.webp",
-    name: "Verbling Challenge",
-    descriptionKey: "Verbling",
-    liveLink: "https://nwelchr.github.io/verbling-challenge/",
-    githubLink: "https://github.com/nwelchr/verbling-challenge",
-    technologies: ["React", "Context API"],
-  },
+  // {
+  //   image: "/assets/images/synergia.webp",
+  //   name: "Synergia",
+  //   descriptionKey: "Synergia",
+  //   liveLink: "https://synergiaihr.com/",
+  //   technologies: [],
+  // },
+  // {
+  //   image: "/assets/images/verbling.webp",
+  //   name: "Verbling Challenge",
+  //   descriptionKey: "Verbling",
+  //   liveLink: "https://nwelchr.github.io/verbling-challenge/",
+  //   githubLink: "https://github.com/nwelchr/verbling-challenge",
+  //   technologies: ["React", "Context API"],
+  // },
 ];
 
 const Projects = () => {

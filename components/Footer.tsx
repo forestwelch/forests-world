@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="flex flex-col gap-y-12 pb-12">
       <p className="text-center">
         You&apos;re viewing this in{" "}
-        <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 transition duration-150 ease-in-out inline-block w-12 text-center">
+        <span className="p-[2px] rounded-lg font-bold bg-stone-200 text-stone-800 dark:bg-stone-800 dark:text-stone-200 transition duration-150 ease-in-out inline-block w-12 text-center">
           <Sparkles
             color={
               theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"
@@ -25,7 +25,7 @@ const Footer = () => {
           onClick={toggleTheme}
         >
           Click here to switch to{" "}
-          <span className="p-[2px] rounded-lg font-bold bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 transition duration-150 ease-in-out inline-block w-12 text-center">
+          <span className="p-[2px] rounded-lg font-bold bg-stone-800 text-stone-200 dark:bg-stone-200 dark:text-stone-800 transition duration-150 ease-in-out inline-block w-12 text-center">
             <Sparkles
               color={
                 theme === "dark" ? "hsl(252, 56%, 26%)" : "hsl(252, 62%, 70%)"

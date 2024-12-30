@@ -9,7 +9,7 @@ const TarotPage = () => {
     <div className="min-h-screen flex flex-col items-center justify-center">
       <Link
         href="/"
-        className="absolute top-4 left-4 text-gray-700 dark:text-gray-200 hover:underline"
+        className="absolute top-4 left-4 text-stone-700 dark:text-stone-200 hover:underline"
       >
         ← Back to Home
       </Link>

@@ -67,8 +67,8 @@ const projects = [
     image: "/assets/images/project-phantom.webp",
     name: "Project Phantom",
     descriptionKey: "ProjectPhantom",
-    liveLink: "https://phantomvrtranslate.github.io/website/",
-    githubLink: "https://github.com/PhantomVRTranslate/PhantomVR",
+    liveLink: "https://phantomvrtranstone.github.io/website/",
+    githubLink: "https://github.com/PhantomVRTranstone/PhantomVR",
     technologies: ["React VR", "NPM"],
   },
   // {

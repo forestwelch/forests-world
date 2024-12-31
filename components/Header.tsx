@@ -24,7 +24,7 @@ const Header = () => {
           </div>
           <Image
             className="max-w-24 max-h-24 object-cover opacity-80 max-lg:hidden"
-            src="/assets/images/logo.webp"
+            src="/images/logo.webp"
             alt="Self"
             width={300}
             height={300}
@@ -41,7 +41,7 @@ const Header = () => {
       </div> */}
         <Navigation />
         <p className="py-12 max-lg:hidden">
-          <ArrowLink href="/assets/resume.pdf" text="View resume" />
+          <ArrowLink href="/resume.pdf" text="View resume" />
         </p>
       </div>
 
@@ -56,7 +56,7 @@ const Header = () => {
           <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
         <p className="self-center lg:hidden">
-          <ArrowLink href="/assets/resume.pdf" text="View full resume" />
+          <ArrowLink href="/resume.pdf" text="View full resume" />
         </p>
       </nav>
     </header>

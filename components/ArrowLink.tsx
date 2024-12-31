@@ -11,7 +11,7 @@ const ArrowLink = ({ href, text }: { href: string; text: string }) => {
       rel="noopener noreferrer"
     >
       {text}
-      <ArrowUpRightIcon className="inline-block ml-1 w-4 h-4 transform transition-transform duration-150 ease-in-out lg:group-hover/link:trangray-x-1 lg:group-hover/link:-trangray-y-1 group-hover/icon:trangray-x-1 group-hover/icon:-trangray-y-1" />
+      <ArrowUpRightIcon className="inline-block ml-1 w-4 h-4 transform transition-transform duration-150 ease-in-out lg:group-hover/link:translate-x-1 lg:group-hover/link:-translate-y-1 group-hover/icon:translate-x-1 group-hover/icon:-translate-y-1" />
     </Link>
   );
 };

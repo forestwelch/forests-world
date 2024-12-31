@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Forest's World",
     images: [
       {
-        url: "/assets/images/open-graph.png",
+        url: "/images/open-graph.png",
         width: 800,
         height: 600,
         alt: "Forest's World Open Graph Image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Forest's World",
     description:
       "I’m a full-stack developer who believes in bridging ideas and technology for real impact—let’s build something beautiful together.",
-    images: ["/assets/images/open-graph.png"],
+    images: ["/images/open-graph.png"],
   },
 };
 

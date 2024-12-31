@@ -6,7 +6,7 @@ import Project from "@/components/Project";
 
 const projects = [
   {
-    image: "/assets/images/visio.webp",
+    image: "/images/visio.webp",
     name: "Visio",
     descriptionKey: "Visio",
     liveLink: "https://visio.forestsworld.me/",
@@ -25,7 +25,7 @@ const projects = [
     ],
   },
   {
-    image: "/assets/images/livedocs.webp",
+    image: "/images/livedocs.webp",
     name: "LiveDocs App",
     descriptionKey: "LiveDocs",
     liveLink: "https://livedocs.forestsworld.me/",
@@ -41,7 +41,7 @@ const projects = [
     ],
   },
   {
-    image: "/assets/images/bop.webp",
+    image: "/images/bop.webp",
     name: "Bop",
     descriptionKey: "Bop",
     liveLink: "https://bop.forestsworld.me",
@@ -56,7 +56,7 @@ const projects = [
     ],
   },
   {
-    image: "/assets/images/power-of-friendship.webp",
+    image: "/images/power-of-friendship.webp",
     name: "The Power of Friendship",
     descriptionKey: "ThePowerOfFriendship",
     liveLink: "https://friendship.forestsworld.me/",
@@ -64,22 +64,22 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    image: "/assets/images/project-phantom.webp",
+    image: "/images/project-phantom.webp",
     name: "Project Phantom",
     descriptionKey: "ProjectPhantom",
-    liveLink: "https://phantomvrtrangray.github.io/website/",
-    githubLink: "https://github.com/PhantomVRTrangray/PhantomVR",
+    liveLink: "https://phantomvrtranslate.github.io/website/",
+    githubLink: "https://github.com/PhantomVRtranslate/PhantomVR",
     technologies: ["React VR", "NPM"],
   },
   // {
-  //   image: "/assets/images/synergia.webp",
+  //   image: "/images/synergia.webp",
   //   name: "Synergia",
   //   descriptionKey: "Synergia",
   //   liveLink: "https://synergiaihr.com/",
   //   technologies: [],
   // },
   // {
-  //   image: "/assets/images/verbling.webp",
+  //   image: "/images/verbling.webp",
   //   name: "Verbling Challenge",
   //   descriptionKey: "Verbling",
   //   liveLink: "https://nwelchr.github.io/verbling-challenge/",

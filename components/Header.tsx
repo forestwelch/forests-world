@@ -14,11 +14,11 @@ const Header = () => {
           <div>
             <h1
               id="site-title"
-              className="text-5xl font-semibold tracking-tight text-left text-stone-800 dark:text-stone-300"
+              className="text-6xl font-thin tracking-tight text-left text-gray-800 dark:text-gray-300"
             >
               Forest Welch
             </h1>
-            <h2 className="text-xl font-medium text-stone-800 dark:text-stone-300">
+            <h2 className="text-xl font-light text-gray-800 dark:text-gray-300">
               Fullstack Software Engineer
             </h2>
           </div>
@@ -53,7 +53,7 @@ const Header = () => {
           <LinkedinIcon />
         </Link>
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
-          <InboxIcon className="h-8 w-8 text-stone-600 dark:text-stone-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
+          <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
         <p className="self-center lg:hidden">
           <ArrowLink href="/assets/resume.pdf" text="View full resume" />

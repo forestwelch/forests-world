@@ -33,21 +33,21 @@ const About = () => {
         Throughout my career, I’ve had the chance to work across a range of
         environments—from{" "}
         <Link
-          className="text-stone-800 dark:text-stone-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
           href="https://www.autodesk.com/"
         >
           large corporations
         </Link>{" "}
         to{" "}
         <Link
-          className="text-stone-800 dark:text-stone-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
           href="https://www.buildingconnected.com/"
         >
           growing startups
         </Link>{" "}
         and{" "}
         <Link
-          className="text-stone-800 dark:text-stone-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
           href="https://www.buildvision.io/"
         >
           pre-seed projects
@@ -59,7 +59,7 @@ const About = () => {
         <Sparkles
           color={theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"}
         >
-          <button className="cursor-default text-stone-800 dark:text-stone-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out">
+          <button className="cursor-default text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out">
             doing tarot readings
           </button>
         </Sparkles>

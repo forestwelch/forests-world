@@ -42,14 +42,14 @@ const Navigation = () => {
             }`}
           >
             <span
-              className={`mr-4 h-[1px] transition-all duration-150 ease-in-out bg-stone-800 dark:bg-stone-200 ${
+              className={`mr-4 h-[1px] transition-all duration-150 ease-in-out bg-gray-800 dark:bg-gray-200 ${
                 activeSection === item.id
                   ? "w-16 opacity-100"
                   : "w-8 opacity-50 group-hover:w-16 group-hover:opacity-100"
               }`}
             ></span>
             <span
-              className={`text-xs font-bold uppercase tracking-widest transition-all duration-150 ease-in-out text-stone-800 dark:text-stone-200 ${
+              className={`text-xs font-bold uppercase tracking-widest transition-all duration-150 ease-in-out text-gray-800 dark:text-gray-200 ${
                 activeSection === item.id
                   ? "opacity-100"
                   : "opacity-50 group-hover:opacity-100"

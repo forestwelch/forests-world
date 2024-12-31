@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-screen-xl mx-auto lg:py-0 p-8">
+    <div className="flex flex-col lg:flex-row justify-between gap-8 max-w-screen-xl mx-auto lg:py-0 p-6">
       <Header />
       <main className="flex flex-col lg:flex-1 gap-y-12">
         <About />

@@ -10,7 +10,7 @@ const experiences = [
     companyLink: "https://www.buildvision.io/",
     dates: "2023 - 2024",
     description:
-      "Spearheaded the development of app views using Next.js, Nest.js, and Postgres. Optimized data retrieval with RTK Query, improving API load times by 40%. Developed a component specification tool that saved 10 hours per week for admins.",
+      "As the second engineer on the team, I was entrusted with building the groundwork for the platform—from crafting the initial UI to designing the core APIs. This early foundation helped secure the company’s first seed funding and shaped the direction of our product.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -26,7 +26,7 @@ const experiences = [
     companyLink: "https://www.autodesk.com/",
     dates: "2020 - 2022",
     description:
-      "Migrated internal tools from Angular to React, saving 20 hours/week. Developed a user event tracking system and A/B testing framework, optimizing the onboarding flow and increasing registrations by 15%.",
+      "After Autodesk acquired us, I guided our platform’s global expansion by implementing a robust internationalization framework. Working with the Growth and Network teams, I focused on boosting user engagement and driving retention through thoughtful product enhancements.",
     technologies: [
       "React",
       "Node.js",
@@ -45,7 +45,7 @@ const experiences = [
     companyLink: "https://www.buildingconnected.com/",
     dates: "2018 - 2020",
     description:
-      "Led the internationalization initiative, reducing component library size by 30% and increasing functionality. Developed a centralized i18n system and unified the component library.",
+      "As a member of the Risk and Frontend Platform teams, I pushed forward new features while modernizing older systems. A highlight of my time here was migrating our internal tools, which significantly streamlined the work of our Customer Success team and set the stage for future innovation.”",
     technologies: [
       "React",
       "Redux",
@@ -61,28 +61,12 @@ const experiences = [
       "Webpack",
     ],
   },
-  {
-    role: "Fullstack Software Engineer",
-    company: "App Academy",
-    companyLink: "https://www.appacademy.io/",
-    dates: "2018",
-    description:
-      "Completed a fullstack engineering bootcamp, focusing on building applications using JavaScript, React, Redux, Node.js, and PostgreSQL.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Postgres",
-      "Redux",
-      "CSS",
-    ],
-  },
 ];
 
 const Experiences = () => {
   return (
     <section className="lg:pt-24" id="experiences">
-      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 bg-violet-700/10 dark:bg-teal-500/10 p-2">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         Experiences
       </h3>
       <div className="flex flex-wrap justify-center gap-12 group">

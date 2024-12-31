@@ -56,6 +56,13 @@ const projects = [
     ],
   },
   {
+    image: "/images/buildingconnected.webp",
+    name: "BuildingConnected Styleguide",
+    descriptionKey: "BuildingConnected",
+    liveLink: "https://design.buildingconnected.com/",
+    technologies: ["React", "Redux", "Styled Components"],
+  },
+  {
     image: "/images/power-of-friendship.webp",
     name: "The Power of Friendship",
     descriptionKey: "ThePowerOfFriendship",
@@ -93,7 +100,7 @@ const Projects = () => {
 
   return (
     <section className="lg:pt-24" id="projects">
-      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 bg-violet-700/10 dark:bg-teal-500/10 p-2">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-violet-700/10 dark:bg-teal-500/10 p-2">
         Projects
       </h3>
       <div className="flex flex-wrap justify-center gap-12 group">

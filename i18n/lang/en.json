@@ -13,5 +13,6 @@
   "Synergia": "An international LGBT human rights organization dedicated to empowering local social movements.",
   "Verbling": "A simple note-taking app with basic CRUD actions. Built with create-react-app and React context API.",
   "LiveDocs": "Collaborative text editor inspired by Google Docs. Supports millions of users editing documents in real time, with features like rich-text formatting, commenting, and sharing.",
-  "Visio": "AI-powered platform that integrates OpenAI’s DALL-E API to generate and share images. Features a community board for AI-generated creations."
+  "Visio": "AI-powered platform that integrates OpenAI’s DALL-E API to generate and share images. Features a community board for AI-generated creations.",
+  "BuildingConnected": "A comprehensive design system consolidating every UI element—from colors and typography, to modals and routing—into a single resource. It features i18n support, reusable components, and clear guidelines so teams can maintain a consistent, scalable interface across the app."
 }

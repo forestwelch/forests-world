@@ -53,7 +53,7 @@ const Header = () => {
           <LinkedinIcon />
         </Link>
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
-          <InboxIcon className="h-8 w-8 text-gray-600 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
+          <InboxIcon className="h-8 w-8 text-gray-800 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
         <p className="self-center lg:hidden">
           <ArrowLink href="/resume.pdf" text="View full resume" />

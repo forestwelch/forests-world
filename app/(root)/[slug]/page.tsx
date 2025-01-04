@@ -1,31 +1,27 @@
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import redirectsJson from "@/public/redirects.json" assert { type: "json" };
+import twilio from "twilio";
 
-type Redirects = { [key: string]: string };
+const redirects = redirectsJson as { [key: string]: string };
 
-const redirects = redirectsJson as Redirects;
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const senderNumber = process.env.TWILIO_SENDER;
+const recipientNumber = process.env.TWILIO_RECIPIENT;
 
-async function sendEmail(slug: string) {
-  const emailResponse = await fetch(
-    "https://api.emailjs.com/api/v1.0/email/send",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        service_id: "service_u649y0i",
-        template_id: "template_qwn6d83",
-        user_id: "yMN-k1fnQZjnrX1j7",
-        template_params: {
-          message: `Someone accessed the redirect: ${slug}`,
-        },
-      }),
-    }
-  );
+const client = twilio(accountSid, authToken);
 
-  if (!emailResponse.ok) {
-    console.error("Failed to send email:", await emailResponse.text());
+async function sendWhatsapp(slug: string, userInfo: string) {
+  try {
+    await client.messages.create({
+      body: `Redirect accessed: ${slug}\nUser Info: ${userInfo}`,
+      from: senderNumber,
+      to: recipientNumber as string,
+    });
+    console.log("WhatsApp message sent successfully!");
+  } catch (error) {
+    console.error("Failed to send WhatsApp message:", error);
   }
 }
 
@@ -34,13 +30,19 @@ export default async function RedirectPage({
 }: {
   params: { slug: string };
 }) {
-  const destination = redirects[params.slug];
+  const { slug } = params;
+  const destination = redirects[slug];
 
-  if (destination) {
-    // Send an email before redirecting
-    await sendEmail(params.slug);
-    redirect(destination);
-  } else {
+  if (!destination) {
     redirect("/404");
   }
+
+  // Grab headers to get IP/user-agent (if available)
+  const h = await headers();
+  const userAgent = h.get("user-agent") || "Unknown";
+  // "x-forwarded-for" may be the user’s IP if your hosting provides it
+  const ipAddress = h.get("x-forwarded-for") || "Unknown";
+
+  await sendWhatsapp(slug, `IP: ${ipAddress}, User-Agent: ${userAgent}`);
+  redirect(destination);
 }

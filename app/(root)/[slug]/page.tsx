@@ -56,11 +56,15 @@ export default function RedirectPage({ params }: { params: { slug: string } }) {
       if (typeof window !== "undefined") {
         window.location.href = "/404";
       }
-      return;
+      return null;
     }
 
     send();
   }, [slug, destination]);
 
-  return null;
+  return (
+    <div className="flex flex-col justify-center items-center h-screen text-center p-4">
+      <h1 className="text-6xl mb-2">Redirecting...</h1>
+    </div>
+  );
 }

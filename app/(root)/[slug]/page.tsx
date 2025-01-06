@@ -56,7 +56,7 @@ export default function RedirectPage({ params }: { params: { slug: string } }) {
       if (typeof window !== "undefined") {
         window.location.href = "/404";
       }
-      return null;
+      return;
     }
 
     send();

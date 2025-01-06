@@ -1,48 +1,66 @@
-import { redirect } from "next/navigation";
-import { headers } from "next/headers";
-import redirectsJson from "@/public/redirects.json" assert { type: "json" };
-import twilio from "twilio";
+"use client";
+
+import { useEffect } from "react";
+import redirectsJson from "@/public/redirects.json";
+import emailjs from "@emailjs/browser";
 
 const redirects = redirectsJson as { [key: string]: string };
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const senderNumber = process.env.TWILIO_SENDER;
-const recipientNumber = process.env.TWILIO_RECIPIENT;
+const serviceId = "service_u649y0i";
+const templateId = "template_4stuu19";
+const publicKey = "yMN-k1fnQZjnrX1j7";
 
-const client = twilio(accountSid, authToken);
+async function sendEmail(slug: string, ipAddress: string, userAgent: string) {
+  const templateParams = {
+    slug,
+    ipAddress,
+    userAgent,
+    date: new Date().toISOString(),
+  };
 
-async function sendWhatsapp(slug: string, userInfo: string) {
   try {
-    await client.messages.create({
-      body: `Redirect accessed: ${slug}\nUser Info: ${userInfo}`,
-      from: senderNumber,
-      to: recipientNumber as string,
-    });
-    console.log("WhatsApp message sent successfully!");
+    const response = await emailjs.send(
+      serviceId,
+      templateId,
+      templateParams,
+      publicKey
+    );
+    console.log("Email sent successfully!", response.status, response.text);
   } catch (error) {
-    console.error("Failed to send WhatsApp message:", error);
+    console.error("Failed to send email:", error);
   }
 }
 
-export default async function RedirectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function RedirectPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const destination = redirects[slug];
 
-  if (!destination) {
-    redirect("/404");
-  }
+  useEffect(() => {
+    const send = async () => {
+      try {
+        const userAgent = navigator.userAgent;
 
-  // Grab headers to get IP/user-agent (if available)
-  const h = await headers();
-  const userAgent = h.get("user-agent") || "Unknown";
-  // "x-forwarded-for" may be the user’s IP if your hosting provides it
-  const ipAddress = h.get("x-forwarded-for") || "Unknown";
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
+        const ipAddress = data.ip;
 
-  await sendWhatsapp(slug, `IP: ${ipAddress}, User-Agent: ${userAgent}`);
-  redirect(destination);
+        await sendEmail(slug, ipAddress, userAgent);
+
+        window.location.href = destination;
+      } catch (error) {
+        console.error("Error during email or redirect:", error);
+      }
+    };
+
+    if (!destination) {
+      if (typeof window !== "undefined") {
+        window.location.href = "/404";
+      }
+      return;
+    }
+
+    send();
+  }, [slug, destination]);
+
+  return null;
 }

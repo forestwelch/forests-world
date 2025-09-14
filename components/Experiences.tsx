@@ -6,6 +6,15 @@ import Experience from "@/components/Experience";
 const experiences = [
   {
     role: "Software Engineer",
+    company: "Rula",
+    companyLink: "https://www.rula.com/",
+    dates: "2025 - Present",
+    description:
+      "As part of the Care Access Team, I build tools that connect people with the right therapist or psychiatrist. My work improves access and personalization, making mental healthcare available to everyone.",
+    technologies: ["Next.js", "Storybook", "Rails"],
+  },
+  {
+    role: "Software Engineer",
     company: "BuildVision",
     companyLink: "https://www.buildvision.io/",
     dates: "2023 - 2024",

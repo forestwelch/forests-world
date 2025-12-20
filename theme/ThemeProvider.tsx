@@ -31,8 +31,11 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     if (theme) {
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(theme);
+      const rootClassList = document.documentElement.classList;
+      rootClassList.remove("light", "dark");
+      if (!rootClassList.contains(theme)) {
+        rootClassList.add(theme);
+      }
     }
   }, [theme]);
 

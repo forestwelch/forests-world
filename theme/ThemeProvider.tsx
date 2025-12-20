@@ -23,9 +23,19 @@ const dmSans = DM_Sans({
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<string | null>(null);
 
+  // Initialize theme from localStorage and set font on body
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(storedTheme);
+    document.body.className = `${dmSans.variable} antialiased`;
+  }, []);
+
+  // When theme changes, update html class
   useEffect(() => {
     if (theme) {
-      document.body.className = `${theme} ${dmSans.variable} antialiased`;
+      // Remove old theme classes, add new one
+      document.documentElement.classList.remove("light", "dark");
+      document.documentElement.classList.add(theme);
     }
   }, [theme]);
 

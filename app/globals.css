@@ -68,7 +68,7 @@ body {
   overflow-y: scroll;
 }
 
-.dark {
+.dark body {
   @apply text-gray-400;
 }
 

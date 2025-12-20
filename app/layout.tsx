@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth">
-      <body>
+    <html className="scroll-smooth" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers>
           <div className="background" />
           <main className="fade-in min-h-screen">{children}</main>

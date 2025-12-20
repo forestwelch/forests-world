@@ -40,16 +40,14 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        <Script id="theme-script" strategy="beforeInteractive">
-          {`
-        (function() {
-          const theme = localStorage.getItem('theme') || 'dark';
-          document.documentElement.classList.add(theme);
-        })();
-      `}
-        </Script>
-      </head>
+      <Script id="theme-script" strategy="beforeInteractive">
+        {`
+          (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.classList.add(theme);
+          })();
+        `}
+      </Script>
       <body>
         <Providers>
           <div className="background" />

@@ -4,11 +4,10 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { DM_Sans } from "next/font/google";
 
 /**
- * Function to reset body styles after the theme change.
- * On page load, the browser may apply `overflow: hidden` and `padding-right: 15px`
- * due to theme toggling. This behavior can cause layout shifts.
- * We explicitly reset these styles to ensure the page layout remains stable
- * and prevents unexpected scrolling or layout issues.
+ * ThemeProvider manages theme state and applies theme classes to the document.
+ * The theme class is applied to <html> (documentElement) to enable CSS selectors
+ * like .dark body, .dark .background, etc. A blocking script in layout.tsx sets
+ * the initial theme class before React hydrates to prevent hydration mismatches.
  */
 
 const ThemeContext = createContext<

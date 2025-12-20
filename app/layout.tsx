@@ -38,7 +38,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth">
+    <html className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem("theme") || "dark";
+                document.documentElement.classList.add(theme);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         <Providers>
           <div className="background" />

@@ -43,7 +43,7 @@ export default function RootLayout({
       <Script id="theme-script" strategy="beforeInteractive">
         {`
           (function() {
-            const theme = localStorage.getItem('theme') || 'dark';
+            const theme = localStorage.getItem("theme") || "dark";
             document.documentElement.classList.add(theme);
           })();
         `}

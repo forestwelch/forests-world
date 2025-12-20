@@ -30,10 +30,8 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     document.body.className = `${dmSans.variable} antialiased`;
   }, []);
 
-  // When theme changes, update html class
   useEffect(() => {
     if (theme) {
-      // Remove old theme classes, add new one
       document.documentElement.classList.remove("light", "dark");
       document.documentElement.classList.add(theme);
     }

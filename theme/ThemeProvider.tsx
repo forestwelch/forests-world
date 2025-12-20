@@ -24,12 +24,6 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") || "dark";
-    setTheme(storedTheme);
-    document.body.className = `${storedTheme} ${dmSans.variable} antialiased`;
-  }, []);
-
-  useEffect(() => {
     if (theme) {
       document.body.className = `${theme} ${dmSans.variable} antialiased`;
     }

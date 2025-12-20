@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/Providers";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Forest's World",
@@ -39,6 +40,16 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth">
+      <head>
+        <Script id="theme-script" strategy="beforeInteractive">
+          {`
+        (function() {
+          const theme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.classList.add(theme);
+        })();
+      `}
+        </Script>
+      </head>
       <body>
         <Providers>
           <div className="background" />

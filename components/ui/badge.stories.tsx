@@ -28,13 +28,18 @@ export const Default: Story = {
 
 export const LongText: Story = {
   args: {
-    term: "TypeScript",
+    term: "TypeScript and JavaScript",
   },
 };
 
-export const ShortText: Story = {
-  args: {
-    term: "AI",
-  },
+export const Multiple: Story = {
+  render: () => (
+    <ul className="list-none flex flex-wrap gap-2">
+      <Badge term="React" />
+      <Badge term="TypeScript" />
+      <Badge term="Next.js" />
+      <Badge term="Tailwind CSS" />
+      <Badge term="Node.js" />
+    </ul>
+  ),
 };
-

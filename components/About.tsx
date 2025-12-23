@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="lg:pt-24" id="about">
-      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-violet-700/10 dark:bg-teal-500/10 p-2">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-light-700/10 dark:bg-dark-500/10 p-2">
         About Me
       </h3>
       <p className="lg:p-0 sm:p-2">
@@ -33,21 +33,21 @@ const About = () => {
         Throughout my career, I’ve had the chance to work across a range of
         environments—from{" "}
         <Link
-          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out"
           href="https://www.autodesk.com/"
         >
           large corporations
         </Link>{" "}
         to{" "}
         <Link
-          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out"
           href="https://www.buildingconnected.com/"
         >
           growing startups
         </Link>{" "}
         and{" "}
         <Link
-          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out"
           href="https://www.buildvision.io/"
         >
           pre-seed projects
@@ -57,9 +57,9 @@ const About = () => {
         <br />
         When I’m not coding, I’m likely practicing yoga, meditating in nature,{" "}
         <Sparkles
-          color={theme === "dark" ? "hsl(171, 55%, 45%)" : "hsl(252, 62%, 70%)"}
+          color={theme === "dark" ? "hsl(150, 40%, 40%)" : "hsl(260, 70%, 60%)"}
         >
-          <button className="cursor-default text-gray-800 dark:text-gray-200 font-semibold hover:text-violet-600 dark:hover:text-violet-300 transition-color duration-150 ease-in-out">
+          <button className="cursor-default text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out">
             doing tarot readings
           </button>
         </Sparkles>

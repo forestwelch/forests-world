@@ -24,7 +24,7 @@ const ThemeWrapper = ({
         document.body;
       if (canvas) {
         (canvas as HTMLElement).style.backgroundColor =
-          theme === "dark" ? "#000000" : "#ffffff";
+          theme === "dark" ? "#030712" : "#ffffff"; // gray-950 instead of black
       }
     }
   }, [theme]);
@@ -33,7 +33,7 @@ const ThemeWrapper = ({
     "div",
     {
       style: {
-        backgroundColor: theme === "dark" ? "#000000" : "#ffffff",
+        backgroundColor: theme === "dark" ? "#030712" : "#ffffff", // gray-950 instead of black
         minHeight: "100vh",
         width: "100%",
       },

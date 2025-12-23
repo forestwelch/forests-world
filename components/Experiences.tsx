@@ -75,7 +75,7 @@ const experiences = [
 const Experiences = () => {
   return (
     <section className="lg:pt-24" id="experiences">
-      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-violet-700/10 dark:bg-teal-500/10 p-2">
+      <h3 className="lg:hidden text-xl tracking-tight font-medium mb-4 text-gray-800 dark:text-gray-200 bg-light-700/10 dark:bg-dark-500/10 p-2">
         Experiences
       </h3>
       <div className="flex flex-wrap justify-center gap-12 group">

@@ -20,8 +20,8 @@ export default function ArmeenPage() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-16 h-72 w-72 rounded-full bg-teal-500/10 blur-3xl" />
-        <div className="absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
+        <div className="absolute -top-24 -left-16 h-72 w-72 rounded-full bg-dark-500/10 blur-3xl" />
+        <div className="absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-light-500/10 blur-3xl" />
       </div>
 
       <div className="z-10 max-w-xl px-6 text-left">
@@ -49,7 +49,7 @@ export default function ArmeenPage() {
           <br />
           <p>
             <a
-              className="font-bold hover:text-teal-700 dark:hover:text-violet-300 transition-color duration-150 ease-in-out"
+              className="font-bold hover:text-dark-700 dark:hover:text-light-300 transition-color duration-150 ease-in-out"
               href="/armeen/video"
               target="_blank"
               rel="noreferrer"

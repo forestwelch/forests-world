@@ -25,12 +25,7 @@ const About = () => {
         applications.
         <br />
         <br />
-        Currently, I’m focused on building projects that combine my technical
-        skills with a commitment to creating positive impact, while also pushing
-        me toward new growth opportunities.
-        <br />
-        <br />
-        Throughout my career, I’ve had the chance to work across a range of
+        Throughout my career, I've had the chance to work across a range of
         environments—from{" "}
         <Link
           className="text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out"
@@ -53,6 +48,18 @@ const About = () => {
           pre-seed projects
         </Link>
         —helping them scale with thoughtful, impactful solutions.
+        <br />
+        <br />
+        Currently I work at{" "}
+        <Link
+          className="text-gray-800 dark:text-gray-200 font-semibold hover:text-light-600 dark:hover:text-dark-300 transition-color duration-150 ease-in-out"
+          href="https://rula.com"
+        >
+          Rula
+        </Link>
+        , where I build tools that connect people with the right therapist. I'm
+        so honored to be working towards making mental healthcare available for
+        everyone.
         <br />
         <br />
         When I’m not coding, I’m likely practicing yoga, meditating in nature,{" "}

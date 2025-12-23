@@ -10,7 +10,7 @@ const experiences = [
     companyLink: "https://www.rula.com/",
     dates: "2025 - Present",
     description:
-      "As part of the Care Access Team, I build tools that connect people with the right therapist or psychiatrist. My work improves access and personalization, making mental healthcare available to everyone.",
+      "As a frontend engineer on the Patient Matching team, I build tools that help people find the right therapist through intuitive search and a seamless onboarding experience.",
     technologies: ["Next.js", "Storybook", "Rails"],
   },
   {

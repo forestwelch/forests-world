@@ -46,10 +46,13 @@ const Header = () => {
       </div>
 
       <nav aria-label="Social links" className="flex flex-row gap-x-4 mt-8">
-        <Link href="https://www.github.com/nwelchr/" aria-label="GitHub">
+        <Link href="https://www.github.com/forestwelch/" aria-label="GitHub">
           <GithubIcon />
         </Link>
-        <Link href="https://www.linkedin.com/in/nwelchr/" aria-label="LinkedIn">
+        <Link
+          href="https://www.linkedin.com/in/forestrwelch/"
+          aria-label="LinkedIn"
+        >
           <LinkedinIcon />
         </Link>
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">

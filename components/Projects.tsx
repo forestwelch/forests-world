@@ -6,6 +6,14 @@ import Project from "@/components/Project";
 
 const projects = [
   {
+    image: "/images/koetori.webp",
+    name: "Koetori",
+    descriptionKey: "Koetori",
+    liveLink: "https://koetori.com",
+    githubLink: "https://github.com/nwelchr/koetori",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Groq", "Supabase"],
+  },
+  {
     image: "/images/visio.webp",
     name: "Visio",
     descriptionKey: "Visio",

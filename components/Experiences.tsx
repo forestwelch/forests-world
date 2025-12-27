@@ -11,7 +11,7 @@ const experiences = [
     dates: "2025 - Present",
     description:
       "As a frontend engineer on the Patient Matching team, I build tools that help people find the right therapist through intuitive search and a seamless onboarding experience.",
-    technologies: ["Next.js", "Storybook", "Rails"],
+    technologies: ["Next.js", "TypeScript", "Storybook", "Amplitude", "Rails"],
   },
   {
     role: "Software Engineer",

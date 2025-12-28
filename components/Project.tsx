@@ -31,7 +31,7 @@ const Project = ({
     >
       <Image
         loading="lazy"
-        className="object-contain self-start rounded-lg max-sm:w-[50%]"
+        className="object-contain self-start rounded-lg max-sm:w-[50%] w-[150px]"
         src={image}
         alt={description}
         width={150}

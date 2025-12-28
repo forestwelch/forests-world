@@ -14,7 +14,7 @@ const Header = () => {
           <div>
             <h1
               id="site-title"
-              className="text-6xl font-thin tracking-tight text-left text-gray-800 dark:text-gray-300"
+              className="text-6xl font-extralight tracking-tight text-left text-gray-800 dark:text-gray-300"
             >
               Forest Welch
             </h1>

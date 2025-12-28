@@ -30,7 +30,7 @@ const Experience = ({
       className="group/link gap-4 lg:p-4 sm:p-2 lg:group-hover:opacity-50 bg-transparent rounded-xl flex flex-row max-sm:flex-col transition-opacity transition-bg duration-150 ease-in-out lg:hover:bg-black/5 dark:lg:hover:bg-white/5 lg:hover:!opacity-100 lg:opacity-75 lg:cursor-pointer w-full"
       onClick={handleClick}
     >
-      <div className="flex-shrink-0 w-32">
+      <div className="flex-shrink-0 w-[150px]">
         <span className="text-sm capitalize font-semibold text-gray-600 dark:text-gray-400">
           {dates}
         </span>

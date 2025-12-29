@@ -6,7 +6,7 @@ import Project from "@/components/Project";
 
 const projects = [
   {
-    image: "/images/koetori.webp",
+    image: "/images/projects/koetori.webp",
     name: "Koetori",
     descriptionKey: "Koetori",
     liveLink: "https://koetori.com",
@@ -14,7 +14,7 @@ const projects = [
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Groq", "Supabase"],
   },
   {
-    image: "/images/visio.webp",
+    image: "/images/projects/visio.webp",
     name: "Visio",
     descriptionKey: "Visio",
     liveLink: "https://visio.forestsworld.me/",
@@ -33,7 +33,7 @@ const projects = [
     ],
   },
   {
-    image: "/images/livedocs.webp",
+    image: "/images/projects/livedocs.webp",
     name: "LiveDocs App",
     descriptionKey: "LiveDocs",
     liveLink: "https://livedocs.forestsworld.me/",
@@ -49,7 +49,7 @@ const projects = [
     ],
   },
   {
-    image: "/images/bop.webp",
+    image: "/images/projects/bop.webp",
     name: "Bop",
     descriptionKey: "Bop",
     liveLink: "https://bop.forestsworld.me",
@@ -64,14 +64,14 @@ const projects = [
     ],
   },
   {
-    image: "/images/buildingconnected.webp",
+    image: "/images/projects/buildingconnected.webp",
     name: "BuildingConnected Styleguide",
     descriptionKey: "BuildingConnected",
     liveLink: "https://design.buildingconnected.com/",
     technologies: ["React", "Redux", "Styled Components"],
   },
   {
-    image: "/images/power-of-friendship.webp",
+    image: "/images/projects/power-of-friendship.webp",
     name: "The Power of Friendship",
     descriptionKey: "ThePowerOfFriendship",
     liveLink: "https://friendship.forestsworld.me/",
@@ -79,7 +79,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    image: "/images/project-phantom.webp",
+    image: "/images/projects/project-phantom.webp",
     name: "Project Phantom",
     descriptionKey: "ProjectPhantom",
     liveLink: "https://phantomvrtranslate.github.io/website/",

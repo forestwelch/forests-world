@@ -9,6 +9,7 @@ const experiences = [
     company: "Rula",
     companyLink: "https://www.rula.com/",
     dates: "2025 - Present",
+    image: "/images/companies/rula.webp",
     description:
       "As a frontend engineer on the Patient Matching team, I build tools that help people find the right therapist through intuitive search and a seamless onboarding experience.",
     technologies: ["Next.js", "TypeScript", "Storybook", "Amplitude", "Rails"],
@@ -18,8 +19,9 @@ const experiences = [
     company: "BuildVision",
     companyLink: "https://www.buildvision.io/",
     dates: "2023 - 2024",
+    image: "/images/companies/buildvision.webp",
     description:
-      "As the second engineer on the team, I was entrusted with building the groundwork for the platform—from crafting the initial UI to designing the core APIs. This early foundation helped secure the company’s first seed funding and shaped the direction of our product.",
+      "As the second engineer on the team, I was entrusted with building the groundwork for the platform—from crafting the initial UI to designing the core APIs. This early foundation helped secure the company's first seed funding and shaped the direction of our product.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -34,8 +36,9 @@ const experiences = [
     company: "Autodesk",
     companyLink: "https://www.autodesk.com/",
     dates: "2020 - 2022",
+    image: "/images/companies/autodesk.webp",
     description:
-      "After Autodesk acquired us, I guided our platform’s global expansion by implementing a robust internationalization framework. Working with the Growth and Network teams, I focused on boosting user engagement and driving retention through thoughtful product enhancements.",
+      "After Autodesk acquired us, I guided our platform's global expansion by implementing a robust internationalization framework. Working with the Growth and Network teams, I focused on boosting user engagement and driving retention through thoughtful product enhancements.",
     technologies: [
       "React",
       "Node.js",
@@ -53,8 +56,9 @@ const experiences = [
     company: "BuildingConnected",
     companyLink: "https://www.buildingconnected.com/",
     dates: "2018 - 2020",
+    image: "/images/companies/buildingconnected.webp",
     description:
-      "As a member of the Risk and Frontend Platform teams, I pushed forward new features while modernizing older systems. A highlight of my time here was migrating our internal tools, which significantly streamlined the work of our Customer Success team and set the stage for future innovation.”",
+      "As a member of the Risk and Frontend Platform teams, I pushed forward new features while modernizing older systems. A highlight of my time here was migrating our internal tools, which significantly streamlined the work of our Customer Success team and set the stage for future innovation.",
     technologies: [
       "React",
       "Redux",
@@ -81,16 +85,16 @@ const Experiences = () => {
       <div className="flex flex-wrap justify-center gap-12 group">
         {experiences.map(
           (
-            { role, company, companyLink, dates, description, technologies },
+            { company, companyLink, dates, description, image, technologies },
             idx
           ) => (
             <Experience
               key={idx}
-              role={role}
               company={company}
               companyLink={companyLink}
               dates={dates}
               description={description}
+              image={image}
               technologies={technologies}
             />
           )

@@ -31,11 +31,11 @@ const Project = ({
     >
       <Image
         loading="lazy"
-        className="object-contain self-start rounded-lg max-sm:w-[50%] w-[150px]"
+        className="object-contain self-start rounded-lg max-sm:hidden w-[300px]"
         src={image}
         alt={description}
-        width={150}
-        height={98}
+        width={300}
+        height={196}
         layout="intrinsic"
       />
       <div className="flex flex-col gap-y-2">

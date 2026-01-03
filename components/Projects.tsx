@@ -4,7 +4,16 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Project from "@/components/Project";
 
-const projects = [
+type ProjectData = {
+  image: string;
+  name: string;
+  descriptionKey: string;
+  liveLink?: string;
+  githubLink?: string;
+  technologies: string[];
+};
+
+const projects: ProjectData[] = [
   {
     image: "/images/projects/koetori.webp",
     name: "Koetori",
@@ -12,6 +21,21 @@ const projects = [
     liveLink: "https://koetori.com",
     githubLink: "https://github.com/nwelchr/koetori",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Groq", "Supabase"],
+  },
+  {
+    image: "/images/projects/friendship-dashboard.webp",
+    name: "Friendship Dashboard",
+    descriptionKey: "FriendshipDashboard",
+    liveLink: "https://hi.forestsworld.me",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Supabase",
+      "React DnD",
+      "TailwindCSS",
+      "React Query",
+    ],
   },
   {
     image: "/images/projects/visio.webp",

@@ -15,11 +15,11 @@ const Project = ({
   description: string;
   name: string;
   image: string;
-  liveLink: string;
+  liveLink?: string;
   technologies: string[];
 }) => {
   const handleClick = () => {
-    if (window.innerWidth >= 1024) {
+    if (liveLink && window.innerWidth >= 1024) {
       window.open(liveLink.toString(), "_blank");
     }
   };
@@ -39,7 +39,11 @@ const Project = ({
         layout="intrinsic"
       />
       <div className="flex flex-col gap-y-2">
-        <ArrowLink href={liveLink} text={name} />
+        {liveLink ? (
+          <ArrowLink href={liveLink} text={name} />
+        ) : (
+          <h4 className="text-lg font-medium">{name}</h4>
+        )}
         <p className="text-base font-light">{description}</p>
         <ul className="gap-2 flex flex-wrap">
           {technologies.map((tech, idx) => (

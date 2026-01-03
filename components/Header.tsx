@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import LinkedinIcon from "@/components/LinkedinIcon";
@@ -5,8 +7,12 @@ import GithubIcon from "@/components/GithubIcon";
 import { InboxIcon } from "@heroicons/react/16/solid";
 import Navigation from "./Navigation";
 import ArrowLink from "./ArrowLink";
+import { useTheme } from "@/theme/ThemeProvider";
+import Sparkles from "./Sparkles";
 
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="flex flex-col justify-between lg:sticky lg:top-0 lg:py-24 max-h-screen lg:w-[45%]">
       <div>
@@ -45,7 +51,7 @@ const Header = () => {
         </p>
       </div>
 
-      <nav aria-label="Social links" className="flex flex-row gap-x-4 mt-8">
+      <nav aria-label="Social links" className="flex flex-row gap-x-4 mt-8 items-center">
         <Link href="https://www.github.com/forestwelch/" aria-label="GitHub">
           <GithubIcon />
         </Link>
@@ -58,6 +64,21 @@ const Header = () => {
         <Link href="mailto:forest.r.welch@gmail.com" aria-label="Email">
           <InboxIcon className="h-8 w-8 text-gray-800 dark:text-gray-200 opacity-70 hover:opacity-100 transition duration-150 ease-in-out" />
         </Link>
+        <button
+          onClick={toggleTheme}
+          className="font-bold hover:text-dark-700 dark:hover:text-light-300 transition-color duration-150 ease-in-out text-gray-800 dark:text-gray-200 opacity-70 hover:opacity-100"
+          aria-label="Toggle theme"
+        >
+          <span className="p-[2px] rounded-lg font-bold bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 transition duration-150 ease-in-out inline-block w-12 text-center">
+            <Sparkles
+              color={
+                theme === "dark" ? "hsl(150, 40%, 40%)" : "hsl(260, 70%, 60%)"
+              }
+            >
+              {theme === "dark" ? "Dark" : "Light"}
+            </Sparkles>
+          </span>
+        </button>
         <p className="self-center lg:hidden">
           <ArrowLink href="/resume.pdf" text="View full resume" />
         </p>

@@ -30,11 +30,9 @@ const projects: ProjectData[] = [
     technologies: [
       "Next.js",
       "TypeScript",
-      "React",
       "Supabase",
       "React DnD",
-      "TailwindCSS",
-      "React Query",
+      "Tanstack",
     ],
   },
   {

@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import redirectsJson from "@/public/redirects.json";
 import emailjs from "@emailjs/browser";
-
-const redirects = redirectsJson as { [key: string]: string };
 
 const serviceId = "service_u649y0i";
 const templateId = "template_4stuu19";
@@ -31,36 +28,40 @@ async function sendEmail(slug: string, ipAddress: string, userAgent: string) {
   }
 }
 
-export default function RedirectPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const destination = redirects[slug];
-
+export default function RedirectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   useEffect(() => {
-    const send = async () => {
+    const handleRedirect = async () => {
       try {
-        const userAgent = navigator.userAgent;
+        const { slug } = await params;
 
-        const response = await fetch("https://api.ipify.org?format=json");
-        const data = await response.json();
-        const ipAddress = data.ip;
+        const response = await fetch("/redirects.json");
+        const redirects = (await response.json()) as { [key: string]: string };
+        const dest = redirects[slug];
+
+        if (!dest) {
+          window.location.href = "/404";
+          return;
+        }
+
+        const userAgent = navigator.userAgent;
+        const ipResponse = await fetch("https://api.ipify.org?format=json");
+        const ipData = await ipResponse.json();
+        const ipAddress = ipData.ip;
 
         await sendEmail(slug, ipAddress, userAgent);
-
-        window.location.href = destination;
+        window.location.href = dest;
       } catch (error) {
-        console.error("Error during email or redirect:", error);
+        console.error("Error during redirect:", error);
+        window.location.href = "/404";
       }
     };
 
-    if (!destination) {
-      if (typeof window !== "undefined") {
-        window.location.href = "/404";
-      }
-      return;
-    }
-
-    send();
-  }, [slug, destination]);
+    handleRedirect();
+  }, [params]);
 
   return (
     <div className="flex flex-col justify-center items-center h-screen text-center p-4">

@@ -8,7 +8,7 @@ const experiences = [
     role: "Software Engineer",
     company: "Rula",
     companyLink: "https://www.rula.com/",
-    dates: "2025 - Present",
+    dates: "2025",
     image: "/images/companies/rula.webp",
     description:
       "As a frontend engineer on the Patient Matching team, I build tools that help people find the right therapist through intuitive search and a seamless onboarding experience.",
